@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="d7b7796207cc4de78f16659d73c6ee93" Name="Diagram1">
+        <EntityTypeShape EntityType="OT_RentCoderModel.OT_Characterizes" Width="1.5" PointX="3" PointY="1.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="OT_RentCoderModel.OT_Country" Width="1.5" PointX="0.75" PointY="4.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="OT_RentCoderModel.OT_Decision" Width="1.5" PointX="12.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="OT_RentCoderModel.OT_ResourceType" Width="1.5" PointX="0.75" PointY="11.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="OT_RentCoderModel.OT_Situation" Width="1.5" PointX="7.75" PointY="9.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="OT_RentCoderModel.OT_Skills" Width="1.5" PointX="10" PointY="5.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="OT_RentCoderModel.OT_TimeZone" Width="1.5" PointX="3" PointY="4.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="OT_RentCoderModel.OT_User" Width="1.5" PointX="10" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="OT_RentCoderModel.OT_UserProfile" Width="1.5" PointX="5.25" PointY="2.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="OT_RentCoderModel.OT_UserSkills" Width="1.5" PointX="12.25" PointY="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="OT_RentCoderModel.OT_USState" Width="1.5" PointX="3" PointY="8.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="OT_RentCoderModel.sysdiagram" Width="1.5" PointX="5.75" PointY="12.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="OT_RentCoderModel.OT_Company" Width="1.5" PointX="10" PointY="9" IsExpanded="true" />
+        <EntityTypeShape EntityType="OT_RentCoderModel.timezone" Width="1.5" PointX="12.75" PointY="7.75" IsExpanded="true" />
+        <AssociationConnector Association="OT_RentCoderModel.FK_OT_Characterizes_OT_UserProfileOne" ManuallyRouted="false" />
+        <AssociationConnector Association="OT_RentCoderModel.FK_OT_Country_OT_UserProfileOne" ManuallyRouted="false" />
+        <AssociationConnector Association="OT_RentCoderModel.FK_OT_TimeZone_OT_Country" ManuallyRouted="false" />
+        <AssociationConnector Association="OT_RentCoderModel.FK_Situation_Company" ManuallyRouted="false" />
+        <AssociationConnector Association="OT_RentCoderModel.FK_UserSkill_SKill_SkillID" ManuallyRouted="false" />
+        <AssociationConnector Association="OT_RentCoderModel.FK_OT_TimeZoneID_OT_UserProfileOne" ManuallyRouted="false" />
+        <AssociationConnector Association="OT_RentCoderModel.FK_User_UserSkill_UserID" ManuallyRouted="false" />
+        <AssociationConnector Association="OT_RentCoderModel.FK_OT_USState_OT_UserProfileOne" ManuallyRouted="false" />
+        <AssociationConnector Association="OT_RentCoderModel.FK_Decision_Company_1" />
+        <AssociationConnector Association="OT_RentCoderModel.FK_Decision_Company_2" />
+        <AssociationConnector Association="OT_RentCoderModel.FK_User_Company" />
+        <AssociationConnector Association="OT_RentCoderModel.FK_OT_ResourceType_Company" />
+        <AssociationConnector Association="OT_RentCoderModel.FK_OT_user_userprofile" />
+        <EntityTypeShape EntityType="OT_RentCoderModel.OT_Role" Width="1.5" PointX="7.75" PointY="2" />
+        <AssociationConnector Association="OT_RentCoderModel.FK_UserType_User" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

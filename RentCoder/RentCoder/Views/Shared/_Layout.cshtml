@@ -1,0 +1,344 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title</title>
+    @Styles.Render("~/Content/css")
+    @Styles.Render("~/Content/toastr")
+    @Scripts.Render("~/bundles/modernizr")
+    
+    <title>Rent Coder</title>
+    <!-- Bootstrap Core CSS -->
+    @*@Scripts.Render("~/css/bootstrap.min.css");*@
+    <!-- Custom CSS -->
+    <link href="~/Content/style.css" rel="stylesheet" />
+    <!-- Custom Fonts -->
+    <link href="fonts/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=divce-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    @*<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>*@
+
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+</head>
+<body class="reg-page-main">
+    <header class="background pad10">
+        <div class="container-fluid">
+            <div class="col-md-6">
+
+
+                <img class="center-align" style="height:40px; " src="images/logo1.png">
+            </div>
+            <div class="col-md-6 ">
+                <div style="display: block;float:right">
+                    <ul>
+                        <li class="page_header"><a class="button" href="#">Rent a Coder</a></li>
+                        <li class="page_header"><a class="button"  data-toggle="modal" data-target="#myModal">Apply as a IT Part Time Job</a></li>
+                        <li class="page_header"><a class="button" href="login.html">Login</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <nav class="navbar navbar-inverse menu">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse nav-default" id="myNavbar">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="#">Home</a></li>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Page 1 <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Page 1-1</a></li>
+                                <li><a href="#">Page 1-2</a></li>
+                                <li><a href="#">Page 1-3</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Page 2</a></li>
+                        <li><a href="#">Page 3</a></li>
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+    </header>
+  @using RedWillow.MvcToastrFlash
+   
+    <div class="container-fluid body-content" style="padding:0px;">
+        @RenderBody()
+    </div>
+    <footer >
+        <section>
+            <div class="container-fluid" style="border-bottom: 1px solid #e8e0e8;padding-bottom:15px;">
+                <h3 class="section-heading">Browse Rent Coder developer profiles.</h3>
+                <div class="col-md-3">
+                    <ul class="ban-list">
+                        <li><a href="#">Android Developers</a></li>
+                        <li><a href="#">Ember.js Developers</a></li>
+                        <li><a href="#">Freelance Developers</a></li>
+                        <li><a href="#">AngularJS Developers</a></li>
+                        <li><a href="#">Back-End Developers</a></li>
+                        <li><a href="#">C++ Developers</a></li>
+                        <li><a href="#">Data Scientists</a></li>
+                        <li><a href="#"> DevOps Engineers</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <ul class="ban-list">
+                        <li><a href="#">Android Developers</a></li>
+                        <li><a href="#">Ember.js Developers</a></li>
+                        <li><a href="#">Freelance Developers</a></li>
+                        <li><a href="#">AngularJS Developers</a></li>
+                        <li><a href="#">Back-End Developers</a></li>
+                        <li><a href="#">C++ Developers</a></li>
+                        <li><a href="#">Data Scientists</a></li>
+                        <li><a href="#"> DevOps Engineers</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <ul class="ban-list">
+                        <li><a href="#">Android Developers</a></li>
+                        <li> <a href="#">Ember.js Developers</a></li>
+                        <li><a href="#"> Freelance Developers</a></li>
+                        <li><a href="#">AngularJS Developers</a></li>
+                        <li><a href="#">Back-End Developers</a></li>
+                        <li><a href="#">C++ Developers</a></li>
+                        <li><a href="#">Data Scientists</a></li>
+                        <li><a href="#"> DevOps Engineers</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <ul class="ban-list">
+                        <li><a href="#">Android Developers</a></li>
+                        <li> <a href="#">Ember.js Developers</a></li>
+                        <li><a href="#"> Freelance Developers</a></li>
+                        <li><a href="#">AngularJS Developers</a></li>
+                        <li><a href="#">Back-End Developers</a></li>
+                        <li><a href="#">C++ Developers</a></li>
+                        <li><a href="#">Data Scientists</a></li>
+                        <li><a href="#"> DevOps Engineers</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="container-fluid" style="border-bottom: 1px solid #e8e0e8;padding-bottom:15px;">
+                <h3 class="section-heading">Browse Rent Coder designer profiles.</h3>
+                <div class="col-md-3">
+                    <ul class="ban-list">
+                        <li><a href="#">Creative Directors</a></li>
+                        <li><a href="#">Freelance Designers</a></li>
+                        <li><a href="#">Graphic Designers</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <ul class="ban-list">
+                        <li><a href="#">Illustrators</a></li>
+                        <li><a href="#">Logo Designers</a></li>
+                        <li><a href="#">Mobile App Designers</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <ul class="ban-list">
+                        <li><a href="#">Product Designers</a></li>
+                        <li><a href="#">UI Designers</a></li>
+                        <li><a href="#">UX Designers</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <ul class="ban-list">
+                        <li><a href="#">Visual Designers</a></li>
+                        <li><a href="#">Web Designers</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="container-fluid" style="border-bottom: 1px solid #e8e0e8;padding-bottom:15px;">
+                <h3 class="section-heading">Browse Rent Coder finance expert profiles.</h3>
+                <div class="col-md-3">
+                    <ul class="ban-list">
+                        <li><a href="#">Business Model Consultants</a></li>
+                        <li> Corporate Finance Consultants</li>
+                        <li><a href="#">Equity Research Analysts</a></li>
+                        <li><a href="#">Financial Analysts</a></li>
+                        <li> <a href="#">Financial Modeling Consultants</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <ul class="ban-list">
+                        <li><a href="#">Fintech Consultants</a></li>
+                        <li><a href="#">FP&A Consultants</a></li>
+                        <li><a href="#">Fundraising Consultants</a></li>
+                        <li><a href="#">Interim CFOs</a></li>
+                        <li><a href="#">M&A Consultants</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <ul class="ban-list">
+                        <li><a href="#">Market Research Analysts</a></li>
+                        <li><a href="#"> Part-Time CFOs</a></li>
+                        <li><a href="#"> Pricing Consultants</a></li>
+                        <li><a href="#">Private Equity Consultants</a></li>
+                        <li><a href="#">Startup Funding Consultants</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <ul class="ban-list">
+                        <li><a href="#">Valuation Specialists</a></li>
+                        <li> <a href="#">Venture Capital Consultants</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="container-fluid footer background">
+
+                <div class="col-md-12" style="border-bottom: 1px solid #e8e0e8;padding-bottom:15px;">
+                    <div class="col-md-3">
+
+                        <ul class="ban-list1">
+                            <li class="footer-head-border">HIGHEST IN-DEMAND TALENT</li>
+                            <li><a href="#">iOS Developer</a></li>
+                            <li><a href="#">Front-End Developer</a></li>
+                            <li><a href="#">UX Designer</a></li>
+                            <li><a href="#">UI Designer</a></li>
+                            <li><a href="#">Financial Modeling Consultants</a></li>
+                            <li><a href="#">Interim CFOs</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3">
+
+                        <ul class="ban-list1">
+                            <li class="footer-head-border">ABOUT</li>
+                            <li><a href="#">Top 3%</a></li>
+                            <li><a href="#">Clients</a></li>
+                            <li><a href="#"> Freelance Developers</a></li>
+                            <li> <a href="#">Freelance Designers</a></li>
+                            <li><a href="#">Freelance Finance Experts</a></li>
+                            <li><a href="#">About Us</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3">
+
+                        <ul class="ban-list1">
+                            <li class="footer-head-border">CONTACT</li>
+                            <li><a href="#">Contact Us</a> </li>
+                            <li> <a href="#">Press Center</a></li>
+                            <li> <a href="#">Careers</a></li>
+                            <li><a href="#"> FAQ</a></li>
+
+                        </ul>
+                    </div>
+                    <div class="col-md-3">
+                        <ul class="social">
+                            <li class="footer-head-border" style="float:none;">SOCIAL</li>
+                            <br>
+                            <li><a href="#"><img src="images/facebook.png"></a> </li>
+                            <li><a href="#"><img src="images/google.png"> </a></li>
+                            <li><a href="#"><img src="images/linkedin.png"></a> </li>
+                            <li><a href="#"><img src="images/twitter.png"></a> </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid footer background">
+                <div class="col-md-6">
+                    <ul>
+                        <li style="list-style: none;color: #fff;">Hire the top 3% of freelance talent</li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <ul class="foter-bottom-pan">
+                        <li>© Copyright 2010 - 2017 Toptal, LLC |</li>
+                        <li> <a href="#"> Privacy Policy</a></li>
+                        <li><a href="#"> Website Terms</a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </section>
+
+    </footer>
+    <!-- Modal -->
+    <div class="modal fade freelancer" id="myModal" role="dialog">
+        <div class="modal-dialog modal-md " style="position: unset;">
+            <div class="modal-content register-basic-page">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Apply to Join our Network of Top Freelancers</h4>
+                </div>
+                <div class="modal-body">
+
+                    <!-- <h1>Apply to Join our Network of Top Freelancers</h1> -->
+                    <p style="text-align:center;">
+                        Rent Coder only accepts great freelancers. When working with Rent Coder, you'll gain access to a network of top
+                        talent, great companies, and resources you can leverage throughout your career.
+                    </p>
+                    <div>
+
+                        <div class="form-group">
+                            <label for="sel1">Select Developer</label>
+                            <select class="form-control" id="sel1">
+                                <option>Developer1</option>
+                                <option>Developer2</option>
+                                <option>Developer3</option>
+                                <option>Developer4</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="1">Email:</label>
+                            <input type="text" class="form-control" id="1" placeholder="Enter Your Email Id">
+                        </div>
+                        <div class="form-group">
+                            <label for="2">Password:</label>
+                            <input type="password" class="form-control" id="2" placeholder="Enter Password">
+                        </div>
+                        <div class="form-group">
+                            <label for="3">Password:</label>
+                            <input type="password" class="form-control" id="3" placeholder="Re-Enter Password">
+                        </div>
+                        <div class="form-group">
+                            <label for="3">Name:</label>
+                            <input type="text" class="form-control" id="3" placeholder="Your Full Name">
+                        </div>
+                        <div class="form-group">
+                            <label for="3">Skype Name:</label>
+                            <input type="text" class="form-control" id="3" placeholder="Your Skype Name">
+                        </div>
+
+
+
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <div style="display: block;float:right">
+                        <li class="page_header"><a class="button" href="#">Join Rent-Coder</a></li>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /Modal -->
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/toastr")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+    @Html.Partial("_Toastr")
+    @*<!-- jQuery -->
+    <script src="js/jquery-2.2.3.min.js"></script>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>*@
+    <!-- Metirial design JavaScript -->
+    @Html.ToastrNotifications()
+</body>
+</html>

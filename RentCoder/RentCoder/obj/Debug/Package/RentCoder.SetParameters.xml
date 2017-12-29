@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <setParameter name="IIS Web Application Name" value="Default Web Site/" />
+  <setParameter name="MyConnection-Web.config Connection String" value="SERVER=localhost;DATABASE=oathtech;UID=root;PASSWORD=123456aA;" />
+</parameters>

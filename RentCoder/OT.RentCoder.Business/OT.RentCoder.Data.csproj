@@ -1,0 +1,174 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{FD5692F0-4D89-475E-B2BB-2008BA42FB61}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>OT.RentCoder.Business</RootNamespace>
+    <AssemblyName>OT.RentCoder.Business</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MySql.Data, Version=6.10.5.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <HintPath>..\packages\MySql.Data.6.10.5\lib\net452\MySql.Data.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="mysql.data.entity.EF6, Version=6.8.3.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <HintPath>..\packages\MySql.Data.Entities.6.8.3.0\lib\net45\mysql.data.entity.EF6.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Configuration.Install" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Drawing.Design" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Base\IDisposeTracker.cs" />
+    <Compile Include="Base\RepositoryBase.cs" />
+    <Compile Include="OT_Characterizes.cs">
+      <DependentUpon>RentCoderModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="OT_Company.cs">
+      <DependentUpon>RentCoderModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="OT_Country.cs">
+      <DependentUpon>RentCoderModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="OT_Decision.cs">
+      <DependentUpon>RentCoderModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="OT_ResourceType.cs">
+      <DependentUpon>RentCoderModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="OT_Role.cs">
+      <DependentUpon>RentCoderModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="OT_Situation.cs">
+      <DependentUpon>RentCoderModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="OT_Skills.cs">
+      <DependentUpon>RentCoderModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="OT_TimeZone.cs">
+      <DependentUpon>RentCoderModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="OT_User.cs">
+      <DependentUpon>RentCoderModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="OT_UserProfile.cs">
+      <DependentUpon>RentCoderModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="OT_UserSkills.cs">
+      <DependentUpon>RentCoderModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="OT_USState.cs">
+      <DependentUpon>RentCoderModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RentCoderEntities.cs" />
+    <Compile Include="RentCoderModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RentCoderModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RentCoderModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RentCoderModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RentCoderModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RentCoderModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Repository\Application.cs" />
+    <Compile Include="Repository\Company.cs" />
+    <Compile Include="Repository\Freelancer.cs" />
+    <Compile Include="Repository\IApplication.cs" />
+    <Compile Include="Repository\IUser.cs" />
+    <Compile Include="sysdiagram.cs">
+      <DependentUpon>RentCoderModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="timezone.cs">
+      <DependentUpon>RentCoderModel.tt</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="packages.config" />
+    <EntityDeploy Include="RentCoderModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>RentCoderModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="RentCoderModel.edmx.diagram">
+      <DependentUpon>RentCoderModel.edmx</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="RentCoderModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>RentCoderModel.edmx</DependentUpon>
+      <LastGenOutput>RentCoderModel.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="RentCoderModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>RentCoderModel.edmx</DependentUpon>
+      <LastGenOutput>RentCoderModel.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

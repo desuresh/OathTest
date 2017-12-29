@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title</title>
+    @Styles.Render("~/Content/css")
+    @Styles.Render("~/Content/toastr")
+    @Scripts.Render("~/bundles/modernizr")
+    
+    <title>Rent Coder</title>
+    <!-- Bootstrap Core CSS -->
+    @*@Scripts.Render("~/css/bootstrap.min.css");*@
+    <!-- Custom CSS -->
+    <link href="Content/style.css" rel="stylesheet">
+    <!-- Custom Fonts -->
+    <link href="fonts/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
+    
+</head>
+<body class="reg-page-main">
+  @using RedWillow.MvcToastrFlash
+
+    <div class="container body-content">
+        @RenderBody()
+    </div>
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/toastr")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+    @Html.Partial("_Toastr")
+    @*<!-- jQuery -->
+    <script src="js/jquery-2.2.3.min.js"></script>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>*@
+    <!-- Metirial design JavaScript -->
+    @Html.ToastrNotifications()
+</body>
+</html>

@@ -1,0 +1,1087 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="OT_RentCoderModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="OT_Characterizes">
+          <Key>
+            <PropertyRef Name="CharacterizesID" />
+          </Key>
+          <Property Name="CharacterizesID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Characterizes" Type="varchar" MaxLength="20" Nullable="false" />
+        </EntityType>
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'OT_RentCoder.dbo.OT_Company' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+        <EntityType Name="OT_Company">
+          <Key>
+            <PropertyRef Name="CompanyID" />
+            <PropertyRef Name="UserID" />
+            <PropertyRef Name="ResourceTypeID" />
+            <PropertyRef Name="CompanyName" />
+            <PropertyRef Name="Name" />
+            <PropertyRef Name="PhoneNumber" />
+            <PropertyRef Name="SituationID" />
+            <PropertyRef Name="IsWorkRemote" />
+          </Key>
+          <Property Name="CompanyID" Type="int" Nullable="false" />
+          <Property Name="UserID" Type="int" Nullable="false" />
+          <Property Name="ResourceTypeID" Type="int" Nullable="false" />
+          <Property Name="CompanyName" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="Name" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="SkypeName" Type="varchar" MaxLength="30" />
+          <Property Name="PhoneNumber" Type="varchar" MaxLength="11" Nullable="false" />
+          <Property Name="SituationID" Type="int" Nullable="false" />
+          <Property Name="IsWorkRemote" Type="int" Nullable="false" />
+          <Property Name="AreYouReayToStartWork" Type="int" />
+          <Property Name="Skills" Type="varchar" MaxLength="300" />
+          <Property Name="CompanySize" Type="int" />
+          <Property Name="CompanyDescription" Type="varchar" MaxLength="300" />
+        </EntityType>
+        <EntityType Name="OT_Country">
+          <Key>
+            <PropertyRef Name="CountryID" />
+          </Key>
+          <Property Name="CountryID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="CountryName" Type="varchar" MaxLength="50" />
+          <Property Name="CountryCode" Type="varchar" MaxLength="5" />
+        </EntityType>
+        <EntityType Name="OT_Decision">
+          <Key>
+            <PropertyRef Name="DecisionID" />
+          </Key>
+          <Property Name="DecisionID" Type="int" Nullable="false" />
+          <Property Name="Decision" Type="varchar" MaxLength="15" />
+        </EntityType>
+        <EntityType Name="OT_ResourceType">
+          <Key>
+            <PropertyRef Name="ResourceTypeId" />
+          </Key>
+          <Property Name="ResourceTypeId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="ResourceType" Type="varchar" MaxLength="30" Nullable="false" />
+        </EntityType>
+        <EntityType Name="OT_Role">
+          <Key>
+            <PropertyRef Name="UserTypeId" />
+          </Key>
+          <Property Name="UserTypeId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="UserType" Type="varbinary" MaxLength="50" Nullable="false" />
+        </EntityType>
+        <EntityType Name="OT_Situation">
+          <Key>
+            <PropertyRef Name="SituationID" />
+          </Key>
+          <Property Name="SituationID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Description" Type="varchar" MaxLength="100" />
+        </EntityType>
+        <EntityType Name="OT_Skills">
+          <Key>
+            <PropertyRef Name="SkillID" />
+          </Key>
+          <Property Name="SkillID" Type="int" Nullable="false" />
+          <Property Name="SkillName" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="SkillCode" Type="varchar" MaxLength="6" />
+        </EntityType>
+        <EntityType Name="OT_TimeZone">
+          <Key>
+            <PropertyRef Name="TimeZoneID" />
+          </Key>
+          <Property Name="TimeZoneID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="TimeZone" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="CountryID" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="OT_User">
+          <Key>
+            <PropertyRef Name="UserId" />
+          </Key>
+          <Property Name="UserId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Email" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="Password" Type="varbinary" MaxLength="10" Nullable="false" />
+          <Property Name="Name" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="SkypeName" Type="varchar" MaxLength="50" />
+          <Property Name="ConfirmationToken" Type="varbinary" MaxLength="20" />
+          <Property Name="IsActive" Type="bit" Nullable="false" />
+          <Property Name="CreateDate" Type="date" />
+          <Property Name="UserTypeID" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="OT_UserProfile">
+          <Key>
+            <PropertyRef Name="ProfileID" />
+          </Key>
+          <Property Name="ProfileID" Type="int" Nullable="false" />
+          <Property Name="FullLegalName" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="CountryID" Type="int" Nullable="false" />
+          <Property Name="CityName" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="TimeZoneID" Type="int" Nullable="false" />
+          <Property Name="Citizenship" Type="int" Nullable="false" />
+          <Property Name="Aboutme" Type="varchar" MaxLength="300" Nullable="false" />
+          <Property Name="Skills" Type="varchar" MaxLength="200" Nullable="false" />
+          <Property Name="ResumePath" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="PersonalWebSiteURL" Type="varchar" MaxLength="50" />
+          <Property Name="LinkedinURL" Type="varchar" MaxLength="50" />
+          <Property Name="GithubUserName" Type="varchar" MaxLength="20" />
+          <Property Name="SampleCodePath" Type="varchar" MaxLength="50" />
+          <Property Name="WhatIsThisCodeAbout" Type="varchar" MaxLength="200" />
+          <Property Name="USStateID" Type="int" />
+          <Property Name="CharacterizesID" Type="int" />
+          <Property Name="AmazingApplication" Type="varchar" MaxLength="300" />
+          <Property Name="HowLongAvailable" Type="varchar" MaxLength="10" />
+          <Property Name="AvailableHoursPerWeek" Type="varchar" MaxLength="10" />
+          <Property Name="HowManyHoursWorkforRentCoder" Type="varchar" MaxLength="10" />
+          <Property Name="WhatDoYouLookForInACompany" Type="varchar" MaxLength="200" />
+          <Property Name="WhatTypesOfProjects" Type="varchar" MaxLength="200" />
+          <Property Name="QuestionsOrComments" Type="varchar" MaxLength="200" />
+          <Property Name="IsAcceptTermsAndConditions" Type="bit" Nullable="false" />
+          <Property Name="UserId" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="OT_UserSkills">
+          <Key>
+            <PropertyRef Name="UserSkillID" />
+          </Key>
+          <Property Name="UserSkillID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="UserId" Type="int" Nullable="false" />
+          <Property Name="SkillID" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="OT_USState">
+          <Key>
+            <PropertyRef Name="StateID" />
+          </Key>
+          <Property Name="StateID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="StateName" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="StateCode" Type="varchar" MaxLength="5" />
+        </EntityType>
+        <EntityType Name="sysdiagrams">
+          <Key>
+            <PropertyRef Name="diagram_id" />
+          </Key>
+          <Property Name="name" Type="nvarchar" MaxLength="128" Nullable="false" />
+          <Property Name="principal_id" Type="int" Nullable="false" />
+          <Property Name="diagram_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="version" Type="int" />
+          <Property Name="definition" Type="varbinary(max)" />
+        </EntityType>
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'OT_RentCoder.dbo.timezone' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+        <EntityType Name="timezone">
+          <Key>
+            <PropertyRef Name="zone_id" />
+            <PropertyRef Name="abbreviation" />
+            <PropertyRef Name="time_start" />
+            <PropertyRef Name="gmt_offset" />
+            <PropertyRef Name="dst" />
+          </Key>
+          <Property Name="zone_id" Type="int" Nullable="false" />
+          <Property Name="abbreviation" Type="varchar" MaxLength="6" Nullable="false" />
+          <Property Name="time_start" Type="decimal" Precision="11" Scale="0" Nullable="false" />
+          <Property Name="gmt_offset" Type="int" Nullable="false" />
+          <Property Name="dst" Type="char" MaxLength="1" Nullable="false" />
+        </EntityType>
+        <Association Name="FK_Decision_Company_1">
+          <End Role="OT_Decision" Type="Self.OT_Decision" Multiplicity="1" />
+          <End Role="OT_Company" Type="Self.OT_Company" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="OT_Decision">
+              <PropertyRef Name="DecisionID" />
+            </Principal>
+            <Dependent Role="OT_Company">
+              <PropertyRef Name="IsWorkRemote" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Decision_Company_2">
+          <End Role="OT_Decision" Type="Self.OT_Decision" Multiplicity="0..1" />
+          <End Role="OT_Company" Type="Self.OT_Company" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="OT_Decision">
+              <PropertyRef Name="DecisionID" />
+            </Principal>
+            <Dependent Role="OT_Company">
+              <PropertyRef Name="AreYouReayToStartWork" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_OT_Characterizes_OT_UserProfileOne">
+          <End Role="OT_Characterizes" Type="Self.OT_Characterizes" Multiplicity="0..1" />
+          <End Role="OT_UserProfile" Type="Self.OT_UserProfile" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="OT_Characterizes">
+              <PropertyRef Name="CharacterizesID" />
+            </Principal>
+            <Dependent Role="OT_UserProfile">
+              <PropertyRef Name="CharacterizesID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_OT_Country_OT_UserProfileOne">
+          <End Role="OT_Country" Type="Self.OT_Country" Multiplicity="1" />
+          <End Role="OT_UserProfile" Type="Self.OT_UserProfile" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="OT_Country">
+              <PropertyRef Name="CountryID" />
+            </Principal>
+            <Dependent Role="OT_UserProfile">
+              <PropertyRef Name="CountryID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_OT_ResourceType_Company">
+          <End Role="OT_ResourceType" Type="Self.OT_ResourceType" Multiplicity="1" />
+          <End Role="OT_Company" Type="Self.OT_Company" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="OT_ResourceType">
+              <PropertyRef Name="ResourceTypeId" />
+            </Principal>
+            <Dependent Role="OT_Company">
+              <PropertyRef Name="ResourceTypeID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_OT_TimeZone_OT_Country">
+          <End Role="OT_Country" Type="Self.OT_Country" Multiplicity="1" />
+          <End Role="OT_TimeZone" Type="Self.OT_TimeZone" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="OT_Country">
+              <PropertyRef Name="CountryID" />
+            </Principal>
+            <Dependent Role="OT_TimeZone">
+              <PropertyRef Name="CountryID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_OT_TimeZoneID_OT_UserProfileOne">
+          <End Role="OT_TimeZone" Type="Self.OT_TimeZone" Multiplicity="1" />
+          <End Role="OT_UserProfile" Type="Self.OT_UserProfile" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="OT_TimeZone">
+              <PropertyRef Name="TimeZoneID" />
+            </Principal>
+            <Dependent Role="OT_UserProfile">
+              <PropertyRef Name="TimeZoneID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_OT_user_userprofile">
+          <End Role="OT_User" Type="Self.OT_User" Multiplicity="1" />
+          <End Role="OT_UserProfile" Type="Self.OT_UserProfile" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="OT_User">
+              <PropertyRef Name="UserId" />
+            </Principal>
+            <Dependent Role="OT_UserProfile">
+              <PropertyRef Name="UserId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_OT_USState_OT_UserProfileOne">
+          <End Role="OT_USState" Type="Self.OT_USState" Multiplicity="0..1" />
+          <End Role="OT_UserProfile" Type="Self.OT_UserProfile" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="OT_USState">
+              <PropertyRef Name="StateID" />
+            </Principal>
+            <Dependent Role="OT_UserProfile">
+              <PropertyRef Name="USStateID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Situation_Company">
+          <End Role="OT_Situation" Type="Self.OT_Situation" Multiplicity="1" />
+          <End Role="OT_Company" Type="Self.OT_Company" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="OT_Situation">
+              <PropertyRef Name="SituationID" />
+            </Principal>
+            <Dependent Role="OT_Company">
+              <PropertyRef Name="SituationID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_User_Company">
+          <End Role="OT_User" Type="Self.OT_User" Multiplicity="1" />
+          <End Role="OT_Company" Type="Self.OT_Company" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="OT_User">
+              <PropertyRef Name="UserId" />
+            </Principal>
+            <Dependent Role="OT_Company">
+              <PropertyRef Name="UserID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_User_UserSkill_UserID">
+          <End Role="OT_User" Type="Self.OT_User" Multiplicity="1" />
+          <End Role="OT_UserSkills" Type="Self.OT_UserSkills" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="OT_User">
+              <PropertyRef Name="UserId" />
+            </Principal>
+            <Dependent Role="OT_UserSkills">
+              <PropertyRef Name="UserId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_UserSkill_SKill_SkillID">
+          <End Role="OT_Skills" Type="Self.OT_Skills" Multiplicity="1" />
+          <End Role="OT_UserSkills" Type="Self.OT_UserSkills" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="OT_Skills">
+              <PropertyRef Name="SkillID" />
+            </Principal>
+            <Dependent Role="OT_UserSkills">
+              <PropertyRef Name="SkillID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_UserType_User">
+          <End Role="OT_Role" Type="Self.OT_Role" Multiplicity="1" />
+          <End Role="OT_User" Type="Self.OT_User" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="OT_Role">
+              <PropertyRef Name="UserTypeId" />
+            </Principal>
+            <Dependent Role="OT_User">
+              <PropertyRef Name="UserTypeID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="OT_RentCoderModelStoreContainer">
+          <EntitySet Name="OT_Characterizes" EntityType="Self.OT_Characterizes" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="OT_Country" EntityType="Self.OT_Country" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="OT_Decision" EntityType="Self.OT_Decision" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="OT_ResourceType" EntityType="Self.OT_ResourceType" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="OT_Role" EntityType="Self.OT_Role" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="OT_Situation" EntityType="Self.OT_Situation" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="OT_Skills" EntityType="Self.OT_Skills" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="OT_TimeZone" EntityType="Self.OT_TimeZone" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="OT_User" EntityType="Self.OT_User" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="OT_UserProfile" EntityType="Self.OT_UserProfile" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="OT_UserSkills" EntityType="Self.OT_UserSkills" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="OT_USState" EntityType="Self.OT_USState" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="OT_Company" EntityType="Self.OT_Company" store:Type="Tables" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [OT_Company].[CompanyID] AS [CompanyID], 
+    [OT_Company].[UserID] AS [UserID], 
+    [OT_Company].[ResourceTypeID] AS [ResourceTypeID], 
+    [OT_Company].[CompanyName] AS [CompanyName], 
+    [OT_Company].[Name] AS [Name], 
+    [OT_Company].[SkypeName] AS [SkypeName], 
+    [OT_Company].[PhoneNumber] AS [PhoneNumber], 
+    [OT_Company].[SituationID] AS [SituationID], 
+    [OT_Company].[IsWorkRemote] AS [IsWorkRemote], 
+    [OT_Company].[AreYouReayToStartWork] AS [AreYouReayToStartWork], 
+    [OT_Company].[Skills] AS [Skills], 
+    [OT_Company].[CompanySize] AS [CompanySize], 
+    [OT_Company].[CompanyDescription] AS [CompanyDescription]
+    FROM [dbo].[OT_Company] AS [OT_Company]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="timezone" EntityType="Self.timezone" store:Type="Tables" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [timezone].[zone_id] AS [zone_id], 
+    [timezone].[abbreviation] AS [abbreviation], 
+    [timezone].[time_start] AS [time_start], 
+    [timezone].[gmt_offset] AS [gmt_offset], 
+    [timezone].[dst] AS [dst]
+    FROM [dbo].[timezone] AS [timezone]</DefiningQuery>
+          </EntitySet>
+          <AssociationSet Name="FK_Decision_Company_1" Association="Self.FK_Decision_Company_1">
+            <End Role="OT_Decision" EntitySet="OT_Decision" />
+            <End Role="OT_Company" EntitySet="OT_Company" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Decision_Company_2" Association="Self.FK_Decision_Company_2">
+            <End Role="OT_Decision" EntitySet="OT_Decision" />
+            <End Role="OT_Company" EntitySet="OT_Company" />
+          </AssociationSet>
+          <AssociationSet Name="FK_OT_Characterizes_OT_UserProfileOne" Association="Self.FK_OT_Characterizes_OT_UserProfileOne">
+            <End Role="OT_Characterizes" EntitySet="OT_Characterizes" />
+            <End Role="OT_UserProfile" EntitySet="OT_UserProfile" />
+          </AssociationSet>
+          <AssociationSet Name="FK_OT_Country_OT_UserProfileOne" Association="Self.FK_OT_Country_OT_UserProfileOne">
+            <End Role="OT_Country" EntitySet="OT_Country" />
+            <End Role="OT_UserProfile" EntitySet="OT_UserProfile" />
+          </AssociationSet>
+          <AssociationSet Name="FK_OT_ResourceType_Company" Association="Self.FK_OT_ResourceType_Company">
+            <End Role="OT_ResourceType" EntitySet="OT_ResourceType" />
+            <End Role="OT_Company" EntitySet="OT_Company" />
+          </AssociationSet>
+          <AssociationSet Name="FK_OT_TimeZone_OT_Country" Association="Self.FK_OT_TimeZone_OT_Country">
+            <End Role="OT_Country" EntitySet="OT_Country" />
+            <End Role="OT_TimeZone" EntitySet="OT_TimeZone" />
+          </AssociationSet>
+          <AssociationSet Name="FK_OT_TimeZoneID_OT_UserProfileOne" Association="Self.FK_OT_TimeZoneID_OT_UserProfileOne">
+            <End Role="OT_TimeZone" EntitySet="OT_TimeZone" />
+            <End Role="OT_UserProfile" EntitySet="OT_UserProfile" />
+          </AssociationSet>
+          <AssociationSet Name="FK_OT_user_userprofile" Association="Self.FK_OT_user_userprofile">
+            <End Role="OT_User" EntitySet="OT_User" />
+            <End Role="OT_UserProfile" EntitySet="OT_UserProfile" />
+          </AssociationSet>
+          <AssociationSet Name="FK_OT_USState_OT_UserProfileOne" Association="Self.FK_OT_USState_OT_UserProfileOne">
+            <End Role="OT_USState" EntitySet="OT_USState" />
+            <End Role="OT_UserProfile" EntitySet="OT_UserProfile" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Situation_Company" Association="Self.FK_Situation_Company">
+            <End Role="OT_Situation" EntitySet="OT_Situation" />
+            <End Role="OT_Company" EntitySet="OT_Company" />
+          </AssociationSet>
+          <AssociationSet Name="FK_User_Company" Association="Self.FK_User_Company">
+            <End Role="OT_User" EntitySet="OT_User" />
+            <End Role="OT_Company" EntitySet="OT_Company" />
+          </AssociationSet>
+          <AssociationSet Name="FK_User_UserSkill_UserID" Association="Self.FK_User_UserSkill_UserID">
+            <End Role="OT_User" EntitySet="OT_User" />
+            <End Role="OT_UserSkills" EntitySet="OT_UserSkills" />
+          </AssociationSet>
+          <AssociationSet Name="FK_UserSkill_SKill_SkillID" Association="Self.FK_UserSkill_SKill_SkillID">
+            <End Role="OT_Skills" EntitySet="OT_Skills" />
+            <End Role="OT_UserSkills" EntitySet="OT_UserSkills" />
+          </AssociationSet>
+          <AssociationSet Name="FK_UserType_User" Association="Self.FK_UserType_User">
+            <End Role="OT_Role" EntitySet="OT_Role" />
+            <End Role="OT_User" EntitySet="OT_User" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="OT_RentCoderModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="OT_Characterizes">
+          <Key>
+            <PropertyRef Name="CharacterizesID" />
+          </Key>
+          <Property Name="CharacterizesID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Characterizes" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <NavigationProperty Name="OT_UserProfile" Relationship="Self.FK_OT_Characterizes_OT_UserProfileOne" FromRole="OT_Characterizes" ToRole="OT_UserProfile" />
+        </EntityType>
+        <EntityType Name="OT_Country">
+          <Key>
+            <PropertyRef Name="CountryID" />
+          </Key>
+          <Property Name="CountryID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="CountryName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="CountryCode" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="OT_UserProfile" Relationship="Self.FK_OT_Country_OT_UserProfileOne" FromRole="OT_Country" ToRole="OT_UserProfile" />
+          <NavigationProperty Name="OT_TimeZone" Relationship="Self.FK_OT_TimeZone_OT_Country" FromRole="OT_Country" ToRole="OT_TimeZone" />
+        </EntityType>
+        <EntityType Name="OT_Decision">
+          <Key>
+            <PropertyRef Name="DecisionID" />
+          </Key>
+          <Property Name="DecisionID" Type="Int32" Nullable="false" />
+          <Property Name="Decision" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="OT_Company" Relationship="OT_RentCoderModel.FK_Decision_Company_1" FromRole="OT_Decision" ToRole="OT_Company" />
+          <NavigationProperty Name="OT_Company1" Relationship="OT_RentCoderModel.FK_Decision_Company_2" FromRole="OT_Decision" ToRole="OT_Company" />
+        </EntityType>
+        <EntityType Name="OT_ResourceType">
+          <Key>
+            <PropertyRef Name="ResourceTypeId" />
+          </Key>
+          <Property Name="ResourceTypeId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="ResourceType" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+          <NavigationProperty Name="OT_Company" Relationship="OT_RentCoderModel.FK_OT_ResourceType_Company" FromRole="OT_ResourceType" ToRole="OT_Company" />
+        </EntityType>
+        <EntityType Name="OT_Situation">
+          <Key>
+            <PropertyRef Name="SituationID" />
+          </Key>
+          <Property Name="SituationID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Description" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="OT_Company" Relationship="Self.FK_Situation_Company" FromRole="OT_Situation" ToRole="OT_Company" />
+        </EntityType>
+        <EntityType Name="OT_Skills">
+          <Key>
+            <PropertyRef Name="SkillID" />
+          </Key>
+          <Property Name="SkillID" Type="Int32" Nullable="false" />
+          <Property Name="SkillName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="SkillCode" Type="String" MaxLength="6" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="OT_UserSkills" Relationship="Self.FK_UserSkill_SKill_SkillID" FromRole="OT_Skills" ToRole="OT_UserSkills" />
+        </EntityType>
+        <EntityType Name="OT_TimeZone">
+          <Key>
+            <PropertyRef Name="TimeZoneID" />
+          </Key>
+          <Property Name="TimeZoneID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="TimeZone" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="CountryID" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="OT_Country" Relationship="Self.FK_OT_TimeZone_OT_Country" FromRole="OT_TimeZone" ToRole="OT_Country" />
+          <NavigationProperty Name="OT_UserProfile" Relationship="Self.FK_OT_TimeZoneID_OT_UserProfileOne" FromRole="OT_TimeZone" ToRole="OT_UserProfile" />
+        </EntityType>
+        <EntityType Name="OT_User">
+          <Key>
+            <PropertyRef Name="UserId" />
+          </Key>
+          <Property Name="UserId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Email" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Password" Type="Binary" MaxLength="10" FixedLength="false" Nullable="false" />
+          <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="SkypeName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="ConfirmationToken" Type="Binary" MaxLength="20" FixedLength="false" />
+          <Property Name="IsActive" Type="Boolean" Nullable="false" />
+          <Property Name="CreateDate" Type="DateTime" Precision="0" />
+          <Property Name="UserTypeID" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="OT_UserSkills" Relationship="Self.FK_User_UserSkill_UserID" FromRole="OT_User" ToRole="OT_UserSkills" />
+          <NavigationProperty Name="OT_Company" Relationship="OT_RentCoderModel.FK_User_Company" FromRole="OT_User" ToRole="OT_Company" />
+          <NavigationProperty Name="OT_UserProfile" Relationship="OT_RentCoderModel.FK_OT_user_userprofile" FromRole="OT_User" ToRole="OT_UserProfile" />
+          <NavigationProperty Name="OT_Role" Relationship="OT_RentCoderModel.FK_UserType_User" FromRole="OT_User" ToRole="OT_Role" />
+        </EntityType>
+        <EntityType Name="OT_UserProfile">
+          <Key>
+            <PropertyRef Name="ProfileID" />
+          </Key>
+          <Property Name="ProfileID" Type="Int32" Nullable="false" />
+          <Property Name="FullLegalName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="CountryID" Type="Int32" Nullable="false" />
+          <Property Name="CityName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="TimeZoneID" Type="Int32" Nullable="false" />
+          <Property Name="Citizenship" Type="Int32" Nullable="false" />
+          <Property Name="Aboutme" Type="String" MaxLength="300" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Skills" Type="String" MaxLength="200" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="ResumePath" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="PersonalWebSiteURL" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="LinkedinURL" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="GithubUserName" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="SampleCodePath" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="WhatIsThisCodeAbout" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="USStateID" Type="Int32" />
+          <Property Name="CharacterizesID" Type="Int32" />
+          <Property Name="AmazingApplication" Type="String" MaxLength="300" FixedLength="false" Unicode="false" />
+          <Property Name="HowLongAvailable" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="AvailableHoursPerWeek" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="HowManyHoursWorkforRentCoder" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="WhatDoYouLookForInACompany" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="WhatTypesOfProjects" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="QuestionsOrComments" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="IsAcceptTermsAndConditions" Type="Boolean" Nullable="false" />
+          <NavigationProperty Name="OT_Characterizes" Relationship="Self.FK_OT_Characterizes_OT_UserProfileOne" FromRole="OT_UserProfile" ToRole="OT_Characterizes" />
+          <NavigationProperty Name="OT_Country" Relationship="Self.FK_OT_Country_OT_UserProfileOne" FromRole="OT_UserProfile" ToRole="OT_Country" />
+          <NavigationProperty Name="OT_TimeZone" Relationship="Self.FK_OT_TimeZoneID_OT_UserProfileOne" FromRole="OT_UserProfile" ToRole="OT_TimeZone" />
+          <NavigationProperty Name="OT_USState" Relationship="Self.FK_OT_USState_OT_UserProfileOne" FromRole="OT_UserProfile" ToRole="OT_USState" />
+          <Property Name="UserId" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="OT_User" Relationship="OT_RentCoderModel.FK_OT_user_userprofile" FromRole="OT_UserProfile" ToRole="OT_User" />
+        </EntityType>
+        <EntityType Name="OT_UserSkills">
+          <Key>
+            <PropertyRef Name="UserSkillID" />
+          </Key>
+          <Property Name="UserSkillID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="UserId" Type="Int32" Nullable="false" />
+          <Property Name="SkillID" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="OT_Skills" Relationship="Self.FK_UserSkill_SKill_SkillID" FromRole="OT_UserSkills" ToRole="OT_Skills" />
+          <NavigationProperty Name="OT_User" Relationship="Self.FK_User_UserSkill_UserID" FromRole="OT_UserSkills" ToRole="OT_User" />
+        </EntityType>
+        <EntityType Name="OT_USState">
+          <Key>
+            <PropertyRef Name="StateID" />
+          </Key>
+          <Property Name="StateID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="StateName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="StateCode" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="OT_UserProfile" Relationship="Self.FK_OT_USState_OT_UserProfileOne" FromRole="OT_USState" ToRole="OT_UserProfile" />
+        </EntityType>
+        <EntityType Name="sysdiagram">
+          <Key>
+            <PropertyRef Name="diagram_id" />
+          </Key>
+          <Property Name="name" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="principal_id" Type="Int32" Nullable="false" />
+          <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="version" Type="Int32" />
+          <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="OT_Company">
+          <Key>
+            <PropertyRef Name="CompanyID" />
+            <PropertyRef Name="ResourceTypeID" />
+            <PropertyRef Name="CompanyName" />
+            <PropertyRef Name="Name" />
+            <PropertyRef Name="PhoneNumber" />
+            <PropertyRef Name="SituationID" />
+            <PropertyRef Name="UserID" />
+            <PropertyRef Name="IsWorkRemote" />
+          </Key>
+          <Property Name="CompanyID" Type="Int32" Nullable="false" />
+          <Property Name="ResourceTypeID" Type="Int32" Nullable="false" />
+          <Property Name="CompanyName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="SkypeName" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="PhoneNumber" Type="String" MaxLength="11" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="SituationID" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="OT_Situation" Relationship="Self.FK_Situation_Company" FromRole="OT_Company" ToRole="OT_Situation" />
+          <Property Name="UserID" Type="Int32" Nullable="false" />
+          <Property Name="IsWorkRemote" Type="Int32" Nullable="false" />
+          <Property Name="AreYouReayToStartWork" Type="Int32" />
+          <Property Name="Skills" Type="String" MaxLength="300" FixedLength="false" Unicode="false" />
+          <Property Name="CompanySize" Type="Int32" />
+          <Property Name="CompanyDescription" Type="String" MaxLength="300" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="OT_Decision" Relationship="OT_RentCoderModel.FK_Decision_Company_1" FromRole="OT_Company" ToRole="OT_Decision" />
+          <NavigationProperty Name="OT_Decision1" Relationship="OT_RentCoderModel.FK_Decision_Company_2" FromRole="OT_Company" ToRole="OT_Decision" />
+          <NavigationProperty Name="OT_User" Relationship="OT_RentCoderModel.FK_User_Company" FromRole="OT_Company" ToRole="OT_User" />
+          <NavigationProperty Name="OT_ResourceType" Relationship="OT_RentCoderModel.FK_OT_ResourceType_Company" FromRole="OT_Company" ToRole="OT_ResourceType" />
+        </EntityType>
+        <EntityType Name="timezone">
+          <Key>
+            <PropertyRef Name="zone_id" />
+            <PropertyRef Name="abbreviation" />
+            <PropertyRef Name="time_start" />
+            <PropertyRef Name="gmt_offset" />
+            <PropertyRef Name="dst" />
+          </Key>
+          <Property Name="zone_id" Type="Int32" Nullable="false" />
+          <Property Name="abbreviation" Type="String" MaxLength="6" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="time_start" Type="Decimal" Precision="11" Scale="0" Nullable="false" />
+          <Property Name="gmt_offset" Type="Int32" Nullable="false" />
+          <Property Name="dst" Type="String" MaxLength="1" FixedLength="true" Unicode="false" Nullable="false" />
+        </EntityType>
+        <Association Name="FK_OT_Characterizes_OT_UserProfileOne">
+          <End Role="OT_Characterizes" Type="Self.OT_Characterizes" Multiplicity="0..1" />
+          <End Role="OT_UserProfile" Type="Self.OT_UserProfile" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="OT_Characterizes">
+              <PropertyRef Name="CharacterizesID" />
+            </Principal>
+            <Dependent Role="OT_UserProfile">
+              <PropertyRef Name="CharacterizesID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_OT_Country_OT_UserProfileOne">
+          <End Role="OT_Country" Type="Self.OT_Country" Multiplicity="1" />
+          <End Role="OT_UserProfile" Type="Self.OT_UserProfile" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="OT_Country">
+              <PropertyRef Name="CountryID" />
+            </Principal>
+            <Dependent Role="OT_UserProfile">
+              <PropertyRef Name="CountryID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_OT_TimeZone_OT_Country">
+          <End Role="OT_Country" Type="Self.OT_Country" Multiplicity="1" />
+          <End Role="OT_TimeZone" Type="Self.OT_TimeZone" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="OT_Country">
+              <PropertyRef Name="CountryID" />
+            </Principal>
+            <Dependent Role="OT_TimeZone">
+              <PropertyRef Name="CountryID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Situation_Company">
+          <End Role="OT_Situation" Type="Self.OT_Situation" Multiplicity="1" />
+          <End Role="OT_Company" Type="Self.OT_Company" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="OT_Situation">
+              <PropertyRef Name="SituationID" />
+            </Principal>
+            <Dependent Role="OT_Company">
+              <PropertyRef Name="SituationID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_UserSkill_SKill_SkillID">
+          <End Role="OT_Skills" Type="Self.OT_Skills" Multiplicity="1" />
+          <End Role="OT_UserSkills" Type="Self.OT_UserSkills" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="OT_Skills">
+              <PropertyRef Name="SkillID" />
+            </Principal>
+            <Dependent Role="OT_UserSkills">
+              <PropertyRef Name="SkillID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_OT_TimeZoneID_OT_UserProfileOne">
+          <End Role="OT_TimeZone" Type="Self.OT_TimeZone" Multiplicity="1" />
+          <End Role="OT_UserProfile" Type="Self.OT_UserProfile" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="OT_TimeZone">
+              <PropertyRef Name="TimeZoneID" />
+            </Principal>
+            <Dependent Role="OT_UserProfile">
+              <PropertyRef Name="TimeZoneID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_User_UserSkill_UserID">
+          <End Role="OT_User" Type="Self.OT_User" Multiplicity="1" />
+          <End Role="OT_UserSkills" Type="Self.OT_UserSkills" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="OT_User">
+              <PropertyRef Name="UserId" />
+            </Principal>
+            <Dependent Role="OT_UserSkills">
+              <PropertyRef Name="UserId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_OT_USState_OT_UserProfileOne">
+          <End Role="OT_USState" Type="Self.OT_USState" Multiplicity="0..1" />
+          <End Role="OT_UserProfile" Type="Self.OT_UserProfile" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="OT_USState">
+              <PropertyRef Name="StateID" />
+            </Principal>
+            <Dependent Role="OT_UserProfile">
+              <PropertyRef Name="USStateID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="RentCoderEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="OT_Characterizes" EntityType="Self.OT_Characterizes" />
+          <EntitySet Name="OT_Country" EntityType="Self.OT_Country" />
+          <EntitySet Name="OT_Decision" EntityType="Self.OT_Decision" />
+          <EntitySet Name="OT_ResourceType" EntityType="Self.OT_ResourceType" />
+          <EntitySet Name="OT_Situation" EntityType="Self.OT_Situation" />
+          <EntitySet Name="OT_Skills" EntityType="Self.OT_Skills" />
+          <EntitySet Name="OT_TimeZone" EntityType="Self.OT_TimeZone" />
+          <EntitySet Name="OT_User" EntityType="Self.OT_User" />
+          <EntitySet Name="OT_UserProfile" EntityType="Self.OT_UserProfile" />
+          <EntitySet Name="OT_UserSkills" EntityType="Self.OT_UserSkills" />
+          <EntitySet Name="OT_USState" EntityType="Self.OT_USState" />
+          <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagram" />
+          <EntitySet Name="OT_Company" EntityType="Self.OT_Company" />
+          <EntitySet Name="timezones" EntityType="Self.timezone" />
+          <AssociationSet Name="FK_OT_Characterizes_OT_UserProfileOne" Association="Self.FK_OT_Characterizes_OT_UserProfileOne">
+            <End Role="OT_Characterizes" EntitySet="OT_Characterizes" />
+            <End Role="OT_UserProfile" EntitySet="OT_UserProfile" />
+          </AssociationSet>
+          <AssociationSet Name="FK_OT_Country_OT_UserProfileOne" Association="Self.FK_OT_Country_OT_UserProfileOne">
+            <End Role="OT_Country" EntitySet="OT_Country" />
+            <End Role="OT_UserProfile" EntitySet="OT_UserProfile" />
+          </AssociationSet>
+          <AssociationSet Name="FK_OT_TimeZone_OT_Country" Association="Self.FK_OT_TimeZone_OT_Country">
+            <End Role="OT_Country" EntitySet="OT_Country" />
+            <End Role="OT_TimeZone" EntitySet="OT_TimeZone" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Situation_Company" Association="Self.FK_Situation_Company">
+            <End Role="OT_Situation" EntitySet="OT_Situation" />
+            <End Role="OT_Company" EntitySet="OT_Company" />
+          </AssociationSet>
+          <AssociationSet Name="FK_UserSkill_SKill_SkillID" Association="Self.FK_UserSkill_SKill_SkillID">
+            <End Role="OT_Skills" EntitySet="OT_Skills" />
+            <End Role="OT_UserSkills" EntitySet="OT_UserSkills" />
+          </AssociationSet>
+          <AssociationSet Name="FK_OT_TimeZoneID_OT_UserProfileOne" Association="Self.FK_OT_TimeZoneID_OT_UserProfileOne">
+            <End Role="OT_TimeZone" EntitySet="OT_TimeZone" />
+            <End Role="OT_UserProfile" EntitySet="OT_UserProfile" />
+          </AssociationSet>
+          <AssociationSet Name="FK_User_UserSkill_UserID" Association="Self.FK_User_UserSkill_UserID">
+            <End Role="OT_User" EntitySet="OT_User" />
+            <End Role="OT_UserSkills" EntitySet="OT_UserSkills" />
+          </AssociationSet>
+          <AssociationSet Name="FK_OT_USState_OT_UserProfileOne" Association="Self.FK_OT_USState_OT_UserProfileOne">
+            <End Role="OT_USState" EntitySet="OT_USState" />
+            <End Role="OT_UserProfile" EntitySet="OT_UserProfile" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Decision_Company_1" Association="OT_RentCoderModel.FK_Decision_Company_1">
+            <End Role="OT_Decision" EntitySet="OT_Decision" />
+            <End Role="OT_Company" EntitySet="OT_Company" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Decision_Company_2" Association="OT_RentCoderModel.FK_Decision_Company_2">
+            <End Role="OT_Decision" EntitySet="OT_Decision" />
+            <End Role="OT_Company" EntitySet="OT_Company" />
+          </AssociationSet>
+          <AssociationSet Name="FK_User_Company" Association="OT_RentCoderModel.FK_User_Company">
+            <End Role="OT_User" EntitySet="OT_User" />
+            <End Role="OT_Company" EntitySet="OT_Company" />
+          </AssociationSet>
+          <AssociationSet Name="FK_OT_ResourceType_Company" Association="OT_RentCoderModel.FK_OT_ResourceType_Company">
+            <End Role="OT_ResourceType" EntitySet="OT_ResourceType" />
+            <End Role="OT_Company" EntitySet="OT_Company" />
+          </AssociationSet>
+          <AssociationSet Name="FK_OT_user_userprofile" Association="OT_RentCoderModel.FK_OT_user_userprofile">
+            <End Role="OT_User" EntitySet="OT_User" />
+            <End Role="OT_UserProfile" EntitySet="OT_UserProfile" />
+          </AssociationSet>
+          <EntitySet Name="OT_Role" EntityType="OT_RentCoderModel.OT_Role" />
+          <AssociationSet Name="FK_UserType_User" Association="OT_RentCoderModel.FK_UserType_User">
+            <End Role="OT_Role" EntitySet="OT_Role" />
+            <End Role="OT_User" EntitySet="OT_User" />
+          </AssociationSet>
+        </EntityContainer>
+        <Association Name="FK_Decision_Company_1">
+          <End Type="OT_RentCoderModel.OT_Decision" Role="OT_Decision" Multiplicity="1" />
+          <End Type="OT_RentCoderModel.OT_Company" Role="OT_Company" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="OT_Decision">
+              <PropertyRef Name="DecisionID" />
+            </Principal>
+            <Dependent Role="OT_Company">
+              <PropertyRef Name="IsWorkRemote" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Decision_Company_2">
+          <End Type="OT_RentCoderModel.OT_Decision" Role="OT_Decision" Multiplicity="0..1" />
+          <End Type="OT_RentCoderModel.OT_Company" Role="OT_Company" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="OT_Decision">
+              <PropertyRef Name="DecisionID" />
+            </Principal>
+            <Dependent Role="OT_Company">
+              <PropertyRef Name="AreYouReayToStartWork" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_User_Company">
+          <End Type="OT_RentCoderModel.OT_User" Role="OT_User" Multiplicity="1" />
+          <End Type="OT_RentCoderModel.OT_Company" Role="OT_Company" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="OT_User">
+              <PropertyRef Name="UserId" />
+            </Principal>
+            <Dependent Role="OT_Company">
+              <PropertyRef Name="UserID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_OT_ResourceType_Company">
+          <End Type="OT_RentCoderModel.OT_ResourceType" Role="OT_ResourceType" Multiplicity="1" />
+          <End Type="OT_RentCoderModel.OT_Company" Role="OT_Company" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="OT_ResourceType">
+              <PropertyRef Name="ResourceTypeId" />
+            </Principal>
+            <Dependent Role="OT_Company">
+              <PropertyRef Name="ResourceTypeID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_OT_user_userprofile">
+          <End Type="OT_RentCoderModel.OT_User" Role="OT_User" Multiplicity="1" />
+          <End Type="OT_RentCoderModel.OT_UserProfile" Role="OT_UserProfile" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="OT_User">
+              <PropertyRef Name="UserId" />
+            </Principal>
+            <Dependent Role="OT_UserProfile">
+              <PropertyRef Name="UserId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityType Name="OT_Role">
+          <Key>
+            <PropertyRef Name="UserTypeId" />
+          </Key>
+          <Property Name="UserTypeId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="UserType" Type="Binary" Nullable="false" MaxLength="50" FixedLength="false" />
+          <NavigationProperty Name="OT_User" Relationship="OT_RentCoderModel.FK_UserType_User" FromRole="OT_Role" ToRole="OT_User" />
+        </EntityType>
+        <Association Name="FK_UserType_User">
+          <End Type="OT_RentCoderModel.OT_Role" Role="OT_Role" Multiplicity="1" />
+          <End Type="OT_RentCoderModel.OT_User" Role="OT_User" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="OT_Role">
+              <PropertyRef Name="UserTypeId" />
+            </Principal>
+            <Dependent Role="OT_User">
+              <PropertyRef Name="UserTypeID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="OT_RentCoderModelStoreContainer" CdmEntityContainer="RentCoderEntities">
+          <EntitySetMapping Name="OT_Characterizes">
+            <EntityTypeMapping TypeName="OT_RentCoderModel.OT_Characterizes">
+              <MappingFragment StoreEntitySet="OT_Characterizes">
+                <ScalarProperty Name="CharacterizesID" ColumnName="CharacterizesID" />
+                <ScalarProperty Name="Characterizes" ColumnName="Characterizes" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="OT_Country">
+            <EntityTypeMapping TypeName="OT_RentCoderModel.OT_Country">
+              <MappingFragment StoreEntitySet="OT_Country">
+                <ScalarProperty Name="CountryID" ColumnName="CountryID" />
+                <ScalarProperty Name="CountryName" ColumnName="CountryName" />
+                <ScalarProperty Name="CountryCode" ColumnName="CountryCode" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="OT_Decision">
+            <EntityTypeMapping TypeName="OT_RentCoderModel.OT_Decision">
+              <MappingFragment StoreEntitySet="OT_Decision">
+                <ScalarProperty Name="DecisionID" ColumnName="DecisionID" />
+                <ScalarProperty Name="Decision" ColumnName="Decision" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="OT_ResourceType">
+            <EntityTypeMapping TypeName="OT_RentCoderModel.OT_ResourceType">
+              <MappingFragment StoreEntitySet="OT_ResourceType">
+                <ScalarProperty Name="ResourceTypeId" ColumnName="ResourceTypeId" />
+                <ScalarProperty Name="ResourceType" ColumnName="ResourceType" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="OT_Situation">
+            <EntityTypeMapping TypeName="OT_RentCoderModel.OT_Situation">
+              <MappingFragment StoreEntitySet="OT_Situation">
+                <ScalarProperty Name="SituationID" ColumnName="SituationID" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="OT_Skills">
+            <EntityTypeMapping TypeName="OT_RentCoderModel.OT_Skills">
+              <MappingFragment StoreEntitySet="OT_Skills">
+                <ScalarProperty Name="SkillID" ColumnName="SkillID" />
+                <ScalarProperty Name="SkillName" ColumnName="SkillName" />
+                <ScalarProperty Name="SkillCode" ColumnName="SkillCode" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="OT_TimeZone">
+            <EntityTypeMapping TypeName="OT_RentCoderModel.OT_TimeZone">
+              <MappingFragment StoreEntitySet="OT_TimeZone">
+                <ScalarProperty Name="TimeZoneID" ColumnName="TimeZoneID" />
+                <ScalarProperty Name="TimeZone" ColumnName="TimeZone" />
+                <ScalarProperty Name="CountryID" ColumnName="CountryID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="OT_User">
+            <EntityTypeMapping TypeName="OT_RentCoderModel.OT_User">
+              <MappingFragment StoreEntitySet="OT_User">
+                <ScalarProperty Name="UserId" ColumnName="UserId" />
+                <ScalarProperty Name="Email" ColumnName="Email" />
+                <ScalarProperty Name="Password" ColumnName="Password" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="SkypeName" ColumnName="SkypeName" />
+                <ScalarProperty Name="ConfirmationToken" ColumnName="ConfirmationToken" />
+                <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+                <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+                <ScalarProperty Name="UserTypeID" ColumnName="UserTypeID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="OT_UserProfile">
+            <EntityTypeMapping TypeName="OT_RentCoderModel.OT_UserProfile">
+              <MappingFragment StoreEntitySet="OT_UserProfile">
+                <ScalarProperty Name="UserId" ColumnName="UserId" />
+                <ScalarProperty Name="ProfileID" ColumnName="ProfileID" />
+                <ScalarProperty Name="FullLegalName" ColumnName="FullLegalName" />
+                <ScalarProperty Name="CountryID" ColumnName="CountryID" />
+                <ScalarProperty Name="CityName" ColumnName="CityName" />
+                <ScalarProperty Name="TimeZoneID" ColumnName="TimeZoneID" />
+                <ScalarProperty Name="Citizenship" ColumnName="Citizenship" />
+                <ScalarProperty Name="Aboutme" ColumnName="Aboutme" />
+                <ScalarProperty Name="Skills" ColumnName="Skills" />
+                <ScalarProperty Name="ResumePath" ColumnName="ResumePath" />
+                <ScalarProperty Name="PersonalWebSiteURL" ColumnName="PersonalWebSiteURL" />
+                <ScalarProperty Name="LinkedinURL" ColumnName="LinkedinURL" />
+                <ScalarProperty Name="GithubUserName" ColumnName="GithubUserName" />
+                <ScalarProperty Name="SampleCodePath" ColumnName="SampleCodePath" />
+                <ScalarProperty Name="WhatIsThisCodeAbout" ColumnName="WhatIsThisCodeAbout" />
+                <ScalarProperty Name="USStateID" ColumnName="USStateID" />
+                <ScalarProperty Name="CharacterizesID" ColumnName="CharacterizesID" />
+                <ScalarProperty Name="AmazingApplication" ColumnName="AmazingApplication" />
+                <ScalarProperty Name="HowLongAvailable" ColumnName="HowLongAvailable" />
+                <ScalarProperty Name="AvailableHoursPerWeek" ColumnName="AvailableHoursPerWeek" />
+                <ScalarProperty Name="HowManyHoursWorkforRentCoder" ColumnName="HowManyHoursWorkforRentCoder" />
+                <ScalarProperty Name="WhatDoYouLookForInACompany" ColumnName="WhatDoYouLookForInACompany" />
+                <ScalarProperty Name="WhatTypesOfProjects" ColumnName="WhatTypesOfProjects" />
+                <ScalarProperty Name="QuestionsOrComments" ColumnName="QuestionsOrComments" />
+                <ScalarProperty Name="IsAcceptTermsAndConditions" ColumnName="IsAcceptTermsAndConditions" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="OT_UserSkills">
+            <EntityTypeMapping TypeName="OT_RentCoderModel.OT_UserSkills">
+              <MappingFragment StoreEntitySet="OT_UserSkills">
+                <ScalarProperty Name="UserSkillID" ColumnName="UserSkillID" />
+                <ScalarProperty Name="UserId" ColumnName="UserId" />
+                <ScalarProperty Name="SkillID" ColumnName="SkillID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="OT_USState">
+            <EntityTypeMapping TypeName="OT_RentCoderModel.OT_USState">
+              <MappingFragment StoreEntitySet="OT_USState">
+                <ScalarProperty Name="StateID" ColumnName="StateID" />
+                <ScalarProperty Name="StateName" ColumnName="StateName" />
+                <ScalarProperty Name="StateCode" ColumnName="StateCode" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="sysdiagrams">
+            <EntityTypeMapping TypeName="OT_RentCoderModel.sysdiagram">
+              <MappingFragment StoreEntitySet="sysdiagrams">
+                <ScalarProperty Name="name" ColumnName="name" />
+                <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+                <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+                <ScalarProperty Name="version" ColumnName="version" />
+                <ScalarProperty Name="definition" ColumnName="definition" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="OT_Company">
+            <EntityTypeMapping TypeName="OT_RentCoderModel.OT_Company">
+              <MappingFragment StoreEntitySet="OT_Company">
+                <ScalarProperty Name="CompanyDescription" ColumnName="CompanyDescription" />
+                <ScalarProperty Name="CompanySize" ColumnName="CompanySize" />
+                <ScalarProperty Name="Skills" ColumnName="Skills" />
+                <ScalarProperty Name="AreYouReayToStartWork" ColumnName="AreYouReayToStartWork" />
+                <ScalarProperty Name="IsWorkRemote" ColumnName="IsWorkRemote" />
+                <ScalarProperty Name="UserID" ColumnName="UserID" />
+                <ScalarProperty Name="CompanyID" ColumnName="CompanyID" />
+                <ScalarProperty Name="ResourceTypeID" ColumnName="ResourceTypeID" />
+                <ScalarProperty Name="CompanyName" ColumnName="CompanyName" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="SkypeName" ColumnName="SkypeName" />
+                <ScalarProperty Name="PhoneNumber" ColumnName="PhoneNumber" />
+                <ScalarProperty Name="SituationID" ColumnName="SituationID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="timezones">
+            <EntityTypeMapping TypeName="OT_RentCoderModel.timezone">
+              <MappingFragment StoreEntitySet="timezone">
+                <ScalarProperty Name="zone_id" ColumnName="zone_id" />
+                <ScalarProperty Name="abbreviation" ColumnName="abbreviation" />
+                <ScalarProperty Name="time_start" ColumnName="time_start" />
+                <ScalarProperty Name="gmt_offset" ColumnName="gmt_offset" />
+                <ScalarProperty Name="dst" ColumnName="dst" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="OT_Role">
+            <EntityTypeMapping TypeName="OT_RentCoderModel.OT_Role">
+              <MappingFragment StoreEntitySet="OT_Role">
+                <ScalarProperty Name="UserType" ColumnName="UserType" />
+                <ScalarProperty Name="UserTypeId" ColumnName="UserTypeId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

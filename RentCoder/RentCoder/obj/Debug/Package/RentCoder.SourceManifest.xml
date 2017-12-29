@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<sitemanifest>
+  <IisApp path="F:\Old Lap\OathTech\RentcoderV1.0\RentCoder\RentCoder\obj\Debug\Package\PackageTmp" />
+  <setAcl path="F:\Old Lap\OathTech\RentcoderV1.0\RentCoder\RentCoder\obj\Debug\Package\PackageTmp" setAclResourceType="Directory" />
+  <setAcl path="F:\Old Lap\OathTech\RentcoderV1.0\RentCoder\RentCoder\obj\Debug\Package\PackageTmp" setAclUser="anonymousAuthenticationUser" setAclResourceType="Directory" />
+</sitemanifest>

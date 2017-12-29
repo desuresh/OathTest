@@ -1,0 +1,289 @@
+E:\R&D\RentcoderV1.0\RentCoder\RentCoder\bin\roslyn\csc.exe
+E:\R&D\RentcoderV1.0\RentCoder\RentCoder\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\R&D\RentcoderV1.0\RentCoder\RentCoder\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\R&D\RentcoderV1.0\RentCoder\RentCoder\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\R&D\RentcoderV1.0\RentCoder\RentCoder\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\R&D\RentcoderV1.0\RentCoder\RentCoder\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\R&D\RentcoderV1.0\RentCoder\RentCoder\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\R&D\RentcoderV1.0\RentCoder\RentCoder\bin\roslyn\System.Collections.Immutable.dll
+E:\R&D\RentcoderV1.0\RentCoder\RentCoder\bin\roslyn\System.Reflection.Metadata.dll
+E:\R&D\RentcoderV1.0\RentCoder\RentCoder\bin\roslyn\vbc.exe
+E:\R&D\RentcoderV1.0\RentCoder\RentCoder\bin\roslyn\VBCSCompiler.exe
+E:\R&D\RentcoderV1.0\RentCoder\RentCoder\bin\roslyn\VBCSCompiler.exe.config
+E:\R&D\RentcoderV1.0\RentCoder\RentCoder\bin\RentCoder.dll.config
+E:\R&D\RentcoderV1.0\RentCoder\RentCoder\bin\RentCoder.dll
+E:\R&D\RentcoderV1.0\RentCoder\RentCoder\bin\RentCoder.pdb
+E:\R&D\RentcoderV1.0\RentCoder\RentCoder\bin\Antlr3.Runtime.dll
+E:\R&D\RentcoderV1.0\RentCoder\RentCoder\bin\EntityFramework.dll
+E:\R&D\RentcoderV1.0\RentCoder\RentCoder\bin\EntityFramework.SqlServer.dll
+E:\R&D\RentcoderV1.0\RentCoder\RentCoder\bin\Microsoft.AspNet.Identity.Core.dll
+E:\R&D\RentcoderV1.0\RentCoder\RentCoder\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+E:\R&D\RentcoderV1.0\RentCoder\RentCoder\bin\Microsoft.AspNet.Identity.Owin.dll
+E:\R&D\RentcoderV1.0\RentCoder\RentCoder\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\R&D\RentcoderV1.0\RentCoder\RentCoder\bin\Microsoft.Owin.dll
+E:\R&D\RentcoderV1.0\RentCoder\RentCoder\bin\Microsoft.Owin.Host.SystemWeb.dll
+E:\R&D\RentcoderV1.0\RentCoder\RentCoder\bin\Microsoft.Owin.Security.Cookies.dll
+E:\R&D\RentcoderV1.0\RentCoder\RentCoder\bin\Microsoft.Owin.Security.dll
+E:\R&D\RentcoderV1.0\RentCoder\RentCoder\bin\Microsoft.Owin.Security.Facebook.dll
+E:\R&D\RentcoderV1.0\RentCoder\RentCoder\bin\Microsoft.Owin.Security.Google.dll
+E:\R&D\RentcoderV1.0\RentCoder\RentCoder\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+E:\R&D\RentcoderV1.0\RentCoder\RentCoder\bin\Microsoft.Owin.Security.OAuth.dll
+E:\R&D\RentcoderV1.0\RentCoder\RentCoder\bin\Microsoft.Owin.Security.Twitter.dll
+E:\R&D\RentcoderV1.0\RentCoder\RentCoder\bin\Microsoft.Web.Infrastructure.dll
+E:\R&D\RentcoderV1.0\RentCoder\RentCoder\bin\Newtonsoft.Json.dll
+E:\R&D\RentcoderV1.0\RentCoder\RentCoder\bin\Owin.dll
+E:\R&D\RentcoderV1.0\RentCoder\RentCoder\bin\System.Web.Helpers.dll
+E:\R&D\RentcoderV1.0\RentCoder\RentCoder\bin\System.Web.Mvc.dll
+E:\R&D\RentcoderV1.0\RentCoder\RentCoder\bin\System.Web.Optimization.dll
+E:\R&D\RentcoderV1.0\RentCoder\RentCoder\bin\System.Web.Razor.dll
+E:\R&D\RentcoderV1.0\RentCoder\RentCoder\bin\System.Web.WebPages.Deployment.dll
+E:\R&D\RentcoderV1.0\RentCoder\RentCoder\bin\System.Web.WebPages.dll
+E:\R&D\RentcoderV1.0\RentCoder\RentCoder\bin\System.Web.WebPages.Razor.dll
+E:\R&D\RentcoderV1.0\RentCoder\RentCoder\bin\WebGrease.dll
+E:\R&D\RentcoderV1.0\RentCoder\RentCoder\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\R&D\RentcoderV1.0\RentCoder\RentCoder\bin\System.Web.Helpers.xml
+E:\R&D\RentcoderV1.0\RentCoder\RentCoder\bin\System.Web.Mvc.xml
+E:\R&D\RentcoderV1.0\RentCoder\RentCoder\bin\System.Web.Optimization.xml
+E:\R&D\RentcoderV1.0\RentCoder\RentCoder\bin\System.Web.Razor.xml
+E:\R&D\RentcoderV1.0\RentCoder\RentCoder\bin\System.Web.WebPages.xml
+E:\R&D\RentcoderV1.0\RentCoder\RentCoder\bin\System.Web.WebPages.Deployment.xml
+E:\R&D\RentcoderV1.0\RentCoder\RentCoder\bin\System.Web.WebPages.Razor.xml
+E:\R&D\RentcoderV1.0\RentCoder\RentCoder\bin\Antlr3.Runtime.pdb
+E:\R&D\RentcoderV1.0\RentCoder\RentCoder\bin\Newtonsoft.Json.xml
+E:\R&D\RentcoderV1.0\RentCoder\RentCoder\bin\EntityFramework.xml
+E:\R&D\RentcoderV1.0\RentCoder\RentCoder\bin\EntityFramework.SqlServer.xml
+E:\R&D\RentcoderV1.0\RentCoder\RentCoder\bin\Microsoft.AspNet.Identity.Core.xml
+E:\R&D\RentcoderV1.0\RentCoder\RentCoder\bin\Microsoft.AspNet.Identity.Owin.xml
+E:\R&D\RentcoderV1.0\RentCoder\RentCoder\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+E:\R&D\RentcoderV1.0\RentCoder\RentCoder\bin\Microsoft.Owin.xml
+E:\R&D\RentcoderV1.0\RentCoder\RentCoder\bin\Microsoft.Owin.Host.SystemWeb.xml
+E:\R&D\RentcoderV1.0\RentCoder\RentCoder\bin\Microsoft.Owin.Security.xml
+E:\R&D\RentcoderV1.0\RentCoder\RentCoder\bin\Microsoft.Owin.Security.Facebook.xml
+E:\R&D\RentcoderV1.0\RentCoder\RentCoder\bin\Microsoft.Owin.Security.Cookies.xml
+E:\R&D\RentcoderV1.0\RentCoder\RentCoder\bin\Microsoft.Owin.Security.OAuth.xml
+E:\R&D\RentcoderV1.0\RentCoder\RentCoder\bin\Microsoft.Owin.Security.Google.xml
+E:\R&D\RentcoderV1.0\RentCoder\RentCoder\bin\Microsoft.Owin.Security.Twitter.xml
+E:\R&D\RentcoderV1.0\RentCoder\RentCoder\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+E:\R&D\RentcoderV1.0\RentCoder\RentCoder\obj\Debug\RentCoder.csprojResolveAssemblyReference.cache
+E:\R&D\RentcoderV1.0\RentCoder\RentCoder\obj\Debug\RentCoder.dll
+E:\R&D\RentcoderV1.0\RentCoder\RentCoder\obj\Debug\RentCoder.pdb
+E:\OathTech\RentcoderV1.0\RentCoder\RentCoder\bin\roslyn\csc.exe
+E:\OathTech\RentcoderV1.0\RentCoder\RentCoder\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\OathTech\RentcoderV1.0\RentCoder\RentCoder\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\OathTech\RentcoderV1.0\RentCoder\RentCoder\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\OathTech\RentcoderV1.0\RentCoder\RentCoder\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\OathTech\RentcoderV1.0\RentCoder\RentCoder\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\OathTech\RentcoderV1.0\RentCoder\RentCoder\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\OathTech\RentcoderV1.0\RentCoder\RentCoder\bin\roslyn\System.Collections.Immutable.dll
+E:\OathTech\RentcoderV1.0\RentCoder\RentCoder\bin\roslyn\System.Reflection.Metadata.dll
+E:\OathTech\RentcoderV1.0\RentCoder\RentCoder\bin\roslyn\vbc.exe
+E:\OathTech\RentcoderV1.0\RentCoder\RentCoder\bin\roslyn\VBCSCompiler.exe
+E:\OathTech\RentcoderV1.0\RentCoder\RentCoder\bin\roslyn\VBCSCompiler.exe.config
+E:\OathTech\RentcoderV1.0\RentCoder\RentCoder\bin\RentCoder.dll.config
+E:\OathTech\RentcoderV1.0\RentCoder\RentCoder\bin\RentCoder.dll
+E:\OathTech\RentcoderV1.0\RentCoder\RentCoder\bin\RentCoder.pdb
+E:\OathTech\RentcoderV1.0\RentCoder\RentCoder\bin\Antlr3.Runtime.dll
+E:\OathTech\RentcoderV1.0\RentCoder\RentCoder\bin\EntityFramework.dll
+E:\OathTech\RentcoderV1.0\RentCoder\RentCoder\bin\EntityFramework.SqlServer.dll
+E:\OathTech\RentcoderV1.0\RentCoder\RentCoder\bin\Microsoft.AspNet.Identity.Core.dll
+E:\OathTech\RentcoderV1.0\RentCoder\RentCoder\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+E:\OathTech\RentcoderV1.0\RentCoder\RentCoder\bin\Microsoft.AspNet.Identity.Owin.dll
+E:\OathTech\RentcoderV1.0\RentCoder\RentCoder\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\OathTech\RentcoderV1.0\RentCoder\RentCoder\bin\Microsoft.Owin.dll
+E:\OathTech\RentcoderV1.0\RentCoder\RentCoder\bin\Microsoft.Owin.Host.SystemWeb.dll
+E:\OathTech\RentcoderV1.0\RentCoder\RentCoder\bin\Microsoft.Owin.Security.Cookies.dll
+E:\OathTech\RentcoderV1.0\RentCoder\RentCoder\bin\Microsoft.Owin.Security.dll
+E:\OathTech\RentcoderV1.0\RentCoder\RentCoder\bin\Microsoft.Owin.Security.Facebook.dll
+E:\OathTech\RentcoderV1.0\RentCoder\RentCoder\bin\Microsoft.Owin.Security.Google.dll
+E:\OathTech\RentcoderV1.0\RentCoder\RentCoder\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+E:\OathTech\RentcoderV1.0\RentCoder\RentCoder\bin\Microsoft.Owin.Security.OAuth.dll
+E:\OathTech\RentcoderV1.0\RentCoder\RentCoder\bin\Microsoft.Owin.Security.Twitter.dll
+E:\OathTech\RentcoderV1.0\RentCoder\RentCoder\bin\Microsoft.Web.Infrastructure.dll
+E:\OathTech\RentcoderV1.0\RentCoder\RentCoder\bin\Newtonsoft.Json.dll
+E:\OathTech\RentcoderV1.0\RentCoder\RentCoder\bin\Owin.dll
+E:\OathTech\RentcoderV1.0\RentCoder\RentCoder\bin\System.Web.Helpers.dll
+E:\OathTech\RentcoderV1.0\RentCoder\RentCoder\bin\System.Web.Mvc.dll
+E:\OathTech\RentcoderV1.0\RentCoder\RentCoder\bin\System.Web.Optimization.dll
+E:\OathTech\RentcoderV1.0\RentCoder\RentCoder\bin\System.Web.Razor.dll
+E:\OathTech\RentcoderV1.0\RentCoder\RentCoder\bin\System.Web.WebPages.Deployment.dll
+E:\OathTech\RentcoderV1.0\RentCoder\RentCoder\bin\System.Web.WebPages.dll
+E:\OathTech\RentcoderV1.0\RentCoder\RentCoder\bin\System.Web.WebPages.Razor.dll
+E:\OathTech\RentcoderV1.0\RentCoder\RentCoder\bin\WebGrease.dll
+E:\OathTech\RentcoderV1.0\RentCoder\RentCoder\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\OathTech\RentcoderV1.0\RentCoder\RentCoder\bin\System.Web.Helpers.xml
+E:\OathTech\RentcoderV1.0\RentCoder\RentCoder\bin\System.Web.Mvc.xml
+E:\OathTech\RentcoderV1.0\RentCoder\RentCoder\bin\System.Web.Optimization.xml
+E:\OathTech\RentcoderV1.0\RentCoder\RentCoder\bin\System.Web.Razor.xml
+E:\OathTech\RentcoderV1.0\RentCoder\RentCoder\bin\System.Web.WebPages.xml
+E:\OathTech\RentcoderV1.0\RentCoder\RentCoder\bin\System.Web.WebPages.Deployment.xml
+E:\OathTech\RentcoderV1.0\RentCoder\RentCoder\bin\System.Web.WebPages.Razor.xml
+E:\OathTech\RentcoderV1.0\RentCoder\RentCoder\bin\Antlr3.Runtime.pdb
+E:\OathTech\RentcoderV1.0\RentCoder\RentCoder\bin\Newtonsoft.Json.xml
+E:\OathTech\RentcoderV1.0\RentCoder\RentCoder\bin\EntityFramework.xml
+E:\OathTech\RentcoderV1.0\RentCoder\RentCoder\bin\EntityFramework.SqlServer.xml
+E:\OathTech\RentcoderV1.0\RentCoder\RentCoder\bin\Microsoft.AspNet.Identity.Core.xml
+E:\OathTech\RentcoderV1.0\RentCoder\RentCoder\bin\Microsoft.AspNet.Identity.Owin.xml
+E:\OathTech\RentcoderV1.0\RentCoder\RentCoder\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+E:\OathTech\RentcoderV1.0\RentCoder\RentCoder\bin\Microsoft.Owin.xml
+E:\OathTech\RentcoderV1.0\RentCoder\RentCoder\bin\Microsoft.Owin.Host.SystemWeb.xml
+E:\OathTech\RentcoderV1.0\RentCoder\RentCoder\bin\Microsoft.Owin.Security.xml
+E:\OathTech\RentcoderV1.0\RentCoder\RentCoder\bin\Microsoft.Owin.Security.Facebook.xml
+E:\OathTech\RentcoderV1.0\RentCoder\RentCoder\bin\Microsoft.Owin.Security.Cookies.xml
+E:\OathTech\RentcoderV1.0\RentCoder\RentCoder\bin\Microsoft.Owin.Security.OAuth.xml
+E:\OathTech\RentcoderV1.0\RentCoder\RentCoder\bin\Microsoft.Owin.Security.Google.xml
+E:\OathTech\RentcoderV1.0\RentCoder\RentCoder\bin\Microsoft.Owin.Security.Twitter.xml
+E:\OathTech\RentcoderV1.0\RentCoder\RentCoder\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+E:\OathTech\RentcoderV1.0\RentCoder\RentCoder\obj\Debug\RentCoder.dll
+E:\OathTech\RentcoderV1.0\RentCoder\RentCoder\obj\Debug\RentCoder.pdb
+E:\OathTech\RentcoderV1.0\RentCoder\RentCoder\bin\MySql.Data.dll
+E:\OathTech\RentcoderV1.0\RentCoder\RentCoder\bin\MySql.Data.xml
+E:\OathTech\RentcoderV1.0\RentCoder\RentCoder\bin\RentCoder.html
+E:\OathTech\RentcoderV1.0\RentCoder\RentCoder\bin\RedWillow.MvcToastrFlash.dll
+E:\OathTech\RentcoderV1.0\RentCoder\RentCoder\bin\RedWillow.MvcToastrFlash.pdb
+E:\OathTech\RentcoderV1.0\RentCoder\RentCoder\obj\Debug\RentCoder.csprojResolveAssemblyReference.cache
+F:\Old Lap\OathTech\RentcoderV1.0\RentCoder\RentCoder\bin\RentCoder.html
+F:\Old Lap\OathTech\RentcoderV1.0\RentCoder\RentCoder\bin\roslyn\csc.exe
+F:\Old Lap\OathTech\RentcoderV1.0\RentCoder\RentCoder\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+F:\Old Lap\OathTech\RentcoderV1.0\RentCoder\RentCoder\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+F:\Old Lap\OathTech\RentcoderV1.0\RentCoder\RentCoder\bin\roslyn\Microsoft.CodeAnalysis.dll
+F:\Old Lap\OathTech\RentcoderV1.0\RentCoder\RentCoder\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+F:\Old Lap\OathTech\RentcoderV1.0\RentCoder\RentCoder\bin\roslyn\Microsoft.CSharp.Core.targets
+F:\Old Lap\OathTech\RentcoderV1.0\RentCoder\RentCoder\bin\roslyn\Microsoft.VisualBasic.Core.targets
+F:\Old Lap\OathTech\RentcoderV1.0\RentCoder\RentCoder\bin\roslyn\System.Collections.Immutable.dll
+F:\Old Lap\OathTech\RentcoderV1.0\RentCoder\RentCoder\bin\roslyn\System.Reflection.Metadata.dll
+F:\Old Lap\OathTech\RentcoderV1.0\RentCoder\RentCoder\bin\roslyn\vbc.exe
+F:\Old Lap\OathTech\RentcoderV1.0\RentCoder\RentCoder\bin\roslyn\VBCSCompiler.exe
+F:\Old Lap\OathTech\RentcoderV1.0\RentCoder\RentCoder\bin\roslyn\VBCSCompiler.exe.config
+F:\Old Lap\OathTech\RentcoderV1.0\RentCoder\RentCoder\bin\RentCoder.dll.config
+F:\Old Lap\OathTech\RentcoderV1.0\RentCoder\RentCoder\bin\RentCoder.dll
+F:\Old Lap\OathTech\RentcoderV1.0\RentCoder\RentCoder\bin\RentCoder.pdb
+F:\Old Lap\OathTech\RentcoderV1.0\RentCoder\RentCoder\bin\Antlr3.Runtime.dll
+F:\Old Lap\OathTech\RentcoderV1.0\RentCoder\RentCoder\bin\EntityFramework.dll
+F:\Old Lap\OathTech\RentcoderV1.0\RentCoder\RentCoder\bin\EntityFramework.SqlServer.dll
+F:\Old Lap\OathTech\RentcoderV1.0\RentCoder\RentCoder\bin\Microsoft.AspNet.Identity.Core.dll
+F:\Old Lap\OathTech\RentcoderV1.0\RentCoder\RentCoder\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+F:\Old Lap\OathTech\RentcoderV1.0\RentCoder\RentCoder\bin\Microsoft.AspNet.Identity.Owin.dll
+F:\Old Lap\OathTech\RentcoderV1.0\RentCoder\RentCoder\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+F:\Old Lap\OathTech\RentcoderV1.0\RentCoder\RentCoder\bin\Microsoft.Owin.dll
+F:\Old Lap\OathTech\RentcoderV1.0\RentCoder\RentCoder\bin\Microsoft.Owin.Host.SystemWeb.dll
+F:\Old Lap\OathTech\RentcoderV1.0\RentCoder\RentCoder\bin\Microsoft.Owin.Security.Cookies.dll
+F:\Old Lap\OathTech\RentcoderV1.0\RentCoder\RentCoder\bin\Microsoft.Owin.Security.dll
+F:\Old Lap\OathTech\RentcoderV1.0\RentCoder\RentCoder\bin\Microsoft.Owin.Security.Facebook.dll
+F:\Old Lap\OathTech\RentcoderV1.0\RentCoder\RentCoder\bin\Microsoft.Owin.Security.Google.dll
+F:\Old Lap\OathTech\RentcoderV1.0\RentCoder\RentCoder\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+F:\Old Lap\OathTech\RentcoderV1.0\RentCoder\RentCoder\bin\Microsoft.Owin.Security.OAuth.dll
+F:\Old Lap\OathTech\RentcoderV1.0\RentCoder\RentCoder\bin\Microsoft.Owin.Security.Twitter.dll
+F:\Old Lap\OathTech\RentcoderV1.0\RentCoder\RentCoder\bin\Microsoft.Web.Infrastructure.dll
+F:\Old Lap\OathTech\RentcoderV1.0\RentCoder\RentCoder\bin\Newtonsoft.Json.dll
+F:\Old Lap\OathTech\RentcoderV1.0\RentCoder\RentCoder\bin\Owin.dll
+F:\Old Lap\OathTech\RentcoderV1.0\RentCoder\RentCoder\bin\RedWillow.MvcToastrFlash.dll
+F:\Old Lap\OathTech\RentcoderV1.0\RentCoder\RentCoder\bin\System.Web.Helpers.dll
+F:\Old Lap\OathTech\RentcoderV1.0\RentCoder\RentCoder\bin\System.Web.Mvc.dll
+F:\Old Lap\OathTech\RentcoderV1.0\RentCoder\RentCoder\bin\System.Web.Optimization.dll
+F:\Old Lap\OathTech\RentcoderV1.0\RentCoder\RentCoder\bin\System.Web.Razor.dll
+F:\Old Lap\OathTech\RentcoderV1.0\RentCoder\RentCoder\bin\System.Web.WebPages.Deployment.dll
+F:\Old Lap\OathTech\RentcoderV1.0\RentCoder\RentCoder\bin\System.Web.WebPages.dll
+F:\Old Lap\OathTech\RentcoderV1.0\RentCoder\RentCoder\bin\System.Web.WebPages.Razor.dll
+F:\Old Lap\OathTech\RentcoderV1.0\RentCoder\RentCoder\bin\WebGrease.dll
+F:\Old Lap\OathTech\RentcoderV1.0\RentCoder\RentCoder\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+F:\Old Lap\OathTech\RentcoderV1.0\RentCoder\RentCoder\bin\MySql.Data.xml
+F:\Old Lap\OathTech\RentcoderV1.0\RentCoder\RentCoder\bin\RedWillow.MvcToastrFlash.pdb
+F:\Old Lap\OathTech\RentcoderV1.0\RentCoder\RentCoder\bin\System.Web.Helpers.xml
+F:\Old Lap\OathTech\RentcoderV1.0\RentCoder\RentCoder\bin\System.Web.Mvc.xml
+F:\Old Lap\OathTech\RentcoderV1.0\RentCoder\RentCoder\bin\System.Web.Optimization.xml
+F:\Old Lap\OathTech\RentcoderV1.0\RentCoder\RentCoder\bin\System.Web.Razor.xml
+F:\Old Lap\OathTech\RentcoderV1.0\RentCoder\RentCoder\bin\System.Web.WebPages.xml
+F:\Old Lap\OathTech\RentcoderV1.0\RentCoder\RentCoder\bin\System.Web.WebPages.Deployment.xml
+F:\Old Lap\OathTech\RentcoderV1.0\RentCoder\RentCoder\bin\System.Web.WebPages.Razor.xml
+F:\Old Lap\OathTech\RentcoderV1.0\RentCoder\RentCoder\bin\Antlr3.Runtime.pdb
+F:\Old Lap\OathTech\RentcoderV1.0\RentCoder\RentCoder\bin\Newtonsoft.Json.xml
+F:\Old Lap\OathTech\RentcoderV1.0\RentCoder\RentCoder\bin\EntityFramework.xml
+F:\Old Lap\OathTech\RentcoderV1.0\RentCoder\RentCoder\bin\EntityFramework.SqlServer.xml
+F:\Old Lap\OathTech\RentcoderV1.0\RentCoder\RentCoder\bin\Microsoft.AspNet.Identity.Core.xml
+F:\Old Lap\OathTech\RentcoderV1.0\RentCoder\RentCoder\bin\Microsoft.AspNet.Identity.Owin.xml
+F:\Old Lap\OathTech\RentcoderV1.0\RentCoder\RentCoder\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+F:\Old Lap\OathTech\RentcoderV1.0\RentCoder\RentCoder\bin\Microsoft.Owin.xml
+F:\Old Lap\OathTech\RentcoderV1.0\RentCoder\RentCoder\bin\Microsoft.Owin.Host.SystemWeb.xml
+F:\Old Lap\OathTech\RentcoderV1.0\RentCoder\RentCoder\bin\Microsoft.Owin.Security.xml
+F:\Old Lap\OathTech\RentcoderV1.0\RentCoder\RentCoder\bin\Microsoft.Owin.Security.Facebook.xml
+F:\Old Lap\OathTech\RentcoderV1.0\RentCoder\RentCoder\bin\Microsoft.Owin.Security.Cookies.xml
+F:\Old Lap\OathTech\RentcoderV1.0\RentCoder\RentCoder\bin\Microsoft.Owin.Security.OAuth.xml
+F:\Old Lap\OathTech\RentcoderV1.0\RentCoder\RentCoder\bin\Microsoft.Owin.Security.Google.xml
+F:\Old Lap\OathTech\RentcoderV1.0\RentCoder\RentCoder\bin\Microsoft.Owin.Security.Twitter.xml
+F:\Old Lap\OathTech\RentcoderV1.0\RentCoder\RentCoder\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+F:\Old Lap\OathTech\RentcoderV1.0\RentCoder\RentCoder\obj\Debug\RentCoder.csprojResolveAssemblyReference.cache
+F:\Old Lap\OathTech\RentcoderV1.0\RentCoder\RentCoder\obj\Debug\RentCoder.dll
+F:\Old Lap\OathTech\RentcoderV1.0\RentCoder\RentCoder\obj\Debug\RentCoder.pdb
+F:\Oath\RentcoderV1.0\RentCoder\RentCoder\bin\RentCoder.html
+F:\Oath\RentcoderV1.0\RentCoder\RentCoder\bin\roslyn\csc.exe
+F:\Oath\RentcoderV1.0\RentCoder\RentCoder\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+F:\Oath\RentcoderV1.0\RentCoder\RentCoder\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+F:\Oath\RentcoderV1.0\RentCoder\RentCoder\bin\roslyn\Microsoft.CodeAnalysis.dll
+F:\Oath\RentcoderV1.0\RentCoder\RentCoder\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+F:\Oath\RentcoderV1.0\RentCoder\RentCoder\bin\roslyn\Microsoft.CSharp.Core.targets
+F:\Oath\RentcoderV1.0\RentCoder\RentCoder\bin\roslyn\Microsoft.VisualBasic.Core.targets
+F:\Oath\RentcoderV1.0\RentCoder\RentCoder\bin\roslyn\System.Collections.Immutable.dll
+F:\Oath\RentcoderV1.0\RentCoder\RentCoder\bin\roslyn\System.Reflection.Metadata.dll
+F:\Oath\RentcoderV1.0\RentCoder\RentCoder\bin\roslyn\vbc.exe
+F:\Oath\RentcoderV1.0\RentCoder\RentCoder\bin\roslyn\VBCSCompiler.exe
+F:\Oath\RentcoderV1.0\RentCoder\RentCoder\bin\roslyn\VBCSCompiler.exe.config
+F:\Oath\RentcoderV1.0\RentCoder\RentCoder\bin\RentCoder.dll.config
+F:\Oath\RentcoderV1.0\RentCoder\RentCoder\bin\RentCoder.dll
+F:\Oath\RentcoderV1.0\RentCoder\RentCoder\bin\RentCoder.pdb
+F:\Oath\RentcoderV1.0\RentCoder\RentCoder\bin\Antlr3.Runtime.dll
+F:\Oath\RentcoderV1.0\RentCoder\RentCoder\bin\EntityFramework.dll
+F:\Oath\RentcoderV1.0\RentCoder\RentCoder\bin\EntityFramework.SqlServer.dll
+F:\Oath\RentcoderV1.0\RentCoder\RentCoder\bin\Microsoft.AspNet.Identity.Core.dll
+F:\Oath\RentcoderV1.0\RentCoder\RentCoder\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+F:\Oath\RentcoderV1.0\RentCoder\RentCoder\bin\Microsoft.AspNet.Identity.Owin.dll
+F:\Oath\RentcoderV1.0\RentCoder\RentCoder\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+F:\Oath\RentcoderV1.0\RentCoder\RentCoder\bin\Microsoft.Owin.dll
+F:\Oath\RentcoderV1.0\RentCoder\RentCoder\bin\Microsoft.Owin.Host.SystemWeb.dll
+F:\Oath\RentcoderV1.0\RentCoder\RentCoder\bin\Microsoft.Owin.Security.Cookies.dll
+F:\Oath\RentcoderV1.0\RentCoder\RentCoder\bin\Microsoft.Owin.Security.dll
+F:\Oath\RentcoderV1.0\RentCoder\RentCoder\bin\Microsoft.Owin.Security.Facebook.dll
+F:\Oath\RentcoderV1.0\RentCoder\RentCoder\bin\Microsoft.Owin.Security.Google.dll
+F:\Oath\RentcoderV1.0\RentCoder\RentCoder\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+F:\Oath\RentcoderV1.0\RentCoder\RentCoder\bin\Microsoft.Owin.Security.OAuth.dll
+F:\Oath\RentcoderV1.0\RentCoder\RentCoder\bin\Microsoft.Owin.Security.Twitter.dll
+F:\Oath\RentcoderV1.0\RentCoder\RentCoder\bin\Microsoft.Web.Infrastructure.dll
+F:\Oath\RentcoderV1.0\RentCoder\RentCoder\bin\Newtonsoft.Json.dll
+F:\Oath\RentcoderV1.0\RentCoder\RentCoder\bin\Owin.dll
+F:\Oath\RentcoderV1.0\RentCoder\RentCoder\bin\RedWillow.MvcToastrFlash.dll
+F:\Oath\RentcoderV1.0\RentCoder\RentCoder\bin\System.Web.Helpers.dll
+F:\Oath\RentcoderV1.0\RentCoder\RentCoder\bin\System.Web.Mvc.dll
+F:\Oath\RentcoderV1.0\RentCoder\RentCoder\bin\System.Web.Optimization.dll
+F:\Oath\RentcoderV1.0\RentCoder\RentCoder\bin\System.Web.Razor.dll
+F:\Oath\RentcoderV1.0\RentCoder\RentCoder\bin\System.Web.WebPages.Deployment.dll
+F:\Oath\RentcoderV1.0\RentCoder\RentCoder\bin\System.Web.WebPages.dll
+F:\Oath\RentcoderV1.0\RentCoder\RentCoder\bin\System.Web.WebPages.Razor.dll
+F:\Oath\RentcoderV1.0\RentCoder\RentCoder\bin\WebGrease.dll
+F:\Oath\RentcoderV1.0\RentCoder\RentCoder\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+F:\Oath\RentcoderV1.0\RentCoder\RentCoder\bin\MySql.Data.xml
+F:\Oath\RentcoderV1.0\RentCoder\RentCoder\bin\RedWillow.MvcToastrFlash.pdb
+F:\Oath\RentcoderV1.0\RentCoder\RentCoder\bin\System.Web.Helpers.xml
+F:\Oath\RentcoderV1.0\RentCoder\RentCoder\bin\System.Web.Mvc.xml
+F:\Oath\RentcoderV1.0\RentCoder\RentCoder\bin\System.Web.Optimization.xml
+F:\Oath\RentcoderV1.0\RentCoder\RentCoder\bin\System.Web.Razor.xml
+F:\Oath\RentcoderV1.0\RentCoder\RentCoder\bin\System.Web.WebPages.xml
+F:\Oath\RentcoderV1.0\RentCoder\RentCoder\bin\System.Web.WebPages.Deployment.xml
+F:\Oath\RentcoderV1.0\RentCoder\RentCoder\bin\System.Web.WebPages.Razor.xml
+F:\Oath\RentcoderV1.0\RentCoder\RentCoder\bin\Antlr3.Runtime.pdb
+F:\Oath\RentcoderV1.0\RentCoder\RentCoder\bin\Newtonsoft.Json.xml
+F:\Oath\RentcoderV1.0\RentCoder\RentCoder\bin\EntityFramework.xml
+F:\Oath\RentcoderV1.0\RentCoder\RentCoder\bin\EntityFramework.SqlServer.xml
+F:\Oath\RentcoderV1.0\RentCoder\RentCoder\bin\Microsoft.AspNet.Identity.Core.xml
+F:\Oath\RentcoderV1.0\RentCoder\RentCoder\bin\Microsoft.AspNet.Identity.Owin.xml
+F:\Oath\RentcoderV1.0\RentCoder\RentCoder\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+F:\Oath\RentcoderV1.0\RentCoder\RentCoder\bin\Microsoft.Owin.xml
+F:\Oath\RentcoderV1.0\RentCoder\RentCoder\bin\Microsoft.Owin.Host.SystemWeb.xml
+F:\Oath\RentcoderV1.0\RentCoder\RentCoder\bin\Microsoft.Owin.Security.xml
+F:\Oath\RentcoderV1.0\RentCoder\RentCoder\bin\Microsoft.Owin.Security.Facebook.xml
+F:\Oath\RentcoderV1.0\RentCoder\RentCoder\bin\Microsoft.Owin.Security.Cookies.xml
+F:\Oath\RentcoderV1.0\RentCoder\RentCoder\bin\Microsoft.Owin.Security.OAuth.xml
+F:\Oath\RentcoderV1.0\RentCoder\RentCoder\bin\Microsoft.Owin.Security.Google.xml
+F:\Oath\RentcoderV1.0\RentCoder\RentCoder\bin\Microsoft.Owin.Security.Twitter.xml
+F:\Oath\RentcoderV1.0\RentCoder\RentCoder\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+F:\Oath\RentcoderV1.0\RentCoder\RentCoder\obj\Debug\RentCoder.csprojResolveAssemblyReference.cache
+F:\Oath\RentcoderV1.0\RentCoder\RentCoder\obj\Debug\RentCoder.dll
+F:\Oath\RentcoderV1.0\RentCoder\RentCoder\obj\Debug\RentCoder.pdb

@@ -1,0 +1,89 @@
+﻿
+@model RentCoder.Models.RegistrationViewModel
+@{
+    ViewBag.Title = "</>RentCoder";
+}
+@Scripts.Render("~/Scripts/jquery-1.10.2.min.js")
+@Scripts.Render("~/Scripts/jquery.validate.min.js")
+@Scripts.Render("~/Scripts/jquery.validate.unobtrusive.min.js")
+<div class="container-fluid reg-page-main">
+    <div class="container">
+        <div style="margin-bottom:20px;"> <a href="#"><img class="center-img" src="images/logo1.png" alt="" /></a></div>
+        <div style="text-align: center;color: #fff">
+            <h2>"If you want to go fast, go alone. If you want to go far, work with us."</h2>
+        </div>
+        <div class="reg-page row">
+            @using (Ajax.BeginForm("RegisterEmployer", "Home",
+                            new AjaxOptions { UpdateTargetId = "divInterestDeatils" }))
+            {
+//                @Html.ValidationSummary(false)
+                @Html.AntiForgeryToken()
+                <fieldset>
+                    <!--name validation-->
+                    <div class="row">
+                        <div class="col-md-6">
+                            <i class="fa fa-user prefix"></i>&nbsp;@Html.LabelFor(m => m.Name)<span>*</span>
+                            <div class="form-group">
+                                @Html.TextBoxFor(m => m.Name, new { @class = "form-control validate" })
+                                @Html.ValidationMessageFor(m=>m.Name)
+                            </div>
+                        </div>
+                        <!--Technology validation-->
+                        <div class="col-md-6">
+                            <i class="fa fa-certificate prefix"></i> &nbsp;@Html.LabelFor(m => m.Technology)<span>*</span>
+                            <div class="form-group">
+                                @Html.TextBoxFor(m => m.Technology, new { @class = "form-control validate" })
+                                @Html.ValidationMessageFor(m => m.Technology)
+                            </div>
+                        </div>
+                    </div>
+                    <!--Experience validation-->
+                    <div class="row">
+                        <div class="col-md-6">
+                            <i class="fa fa-briefcase prefix"></i>&nbsp; @Html.LabelFor(m => m.Experiance) <span>*</span>
+                            <div class="form-group">
+                                @Html.TextBoxFor(m => m.Experiance, new { @class = "form-control validate" })
+                                @Html.ValidationMessageFor(m => m.Experiance)
+                            </div >
+                        </div >
+                        <!--name validation-->
+                        <div class="col-md-6">
+                            <i class="fa fa-phone prefix"></i>&nbsp;@Html.LabelFor(m => m.Contact)
+                            <div class="form-group">
+                                @Html.TextBoxFor(m => m.Contact, new { @class = "form-control validate" })
+
+                            </div>
+                        </div>
+                    </div>
+                    <!--Email validation-->
+                    <div class="row">
+                        <div class="col-md-6">
+                            <i class="fa fa-envelope prefix"></i> &nbsp;@Html.LabelFor(m => m.Email)<span>*</span>
+                            <div class="form-group">
+                                @Html.TextBoxFor(m => m.Email, new { @class = "form-control validate" })
+                                @Html.ValidationMessageFor(m => m.Email)
+                            </div>
+                        </div>
+                        <!--Emplyement validation-->
+                        <div class="col-md-6">
+
+                            <i class="fa fa-keyboard-o prefix"></i>&nbsp;@Html.LabelFor(m => m.EmployementType)<span>*</span>
+                            <div class="form-group">
+                                @*<input type="text" id="form9" class="form-control validate">*@
+                               @Html.DropDownListFor(model => model.EmployementType, new SelectList(Model.EmployementTypes, "Name", "Name"), "- Please Select -", new { @class = "form-control validate" })
+                            @Html.ValidationMessageFor(model => model.EmployementType)
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Change this to a button or input when using this as a form -->
+                    <div class="row">
+                        <div class="col-md-7 pull-right">
+                            <input type="submit" class="btn btn-lg btn-primary " style="border-radius: 5px" value="Register" />
+                            @*<a href="#" class="btn btn-lg btn-primary " onclick="sendmail();" style="border-radius: 5px">Register</a>*@
+                        </div>
+                    </div>
+                </fieldset>
+            }
+        </div>
+    </div>
+</div>
